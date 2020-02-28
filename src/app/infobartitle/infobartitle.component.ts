@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-infobartitle',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./infobartitle.component.css']
 })
 export class InfobartitleComponent implements OnInit {
+
+  @Input() public parentData;
 
   constructor() { }
 
