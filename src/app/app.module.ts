@@ -8,11 +8,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
+import { InfobartitleComponent } from './infobartitle/infobartitle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    InfobartitleComponent,
     
   ],
   imports: [
