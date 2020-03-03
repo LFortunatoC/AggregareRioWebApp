@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "id": 2,
+            "client_id": 2,
+            "picturePath": "http://localhost:8000/storage/app/public/rest_pics//IMG_20181123_161656165.jpg",
+            "logoPath": "http://localhost:8000/storage/app/public/rest_logos//IMG_20181123_170123614.jpg",
+            "defaultLang": 1,
+            "active": 1,
+            "created_at": "2020-02-26 21:47:16",
+            "updated_at": "2020-02-26 21:47:16"
+        },
+        {
+            "id": 3,
+            "client_id": 3,
+            "picturePath": "http://localhost:8000/storage/app/public/rest_pics//IMG_20181123_170346287_BURST000_COVER_TOP.jpg",
+            "logoPath": "",
+            "defaultLang": 1,
+            "active": 1,
+            "created_at": "2020-02-26 21:47:48",
+            "updated_at": "2020-02-26 21:47:48"
+        },
+        {
+            "id": 4,
+            "client_id": 3,
+            "picturePath": "http://localhost:8000/storage/app/public/rest_pics//IMG_20181123_172310383.jpg",
+            "logoPath": "",
+            "defaultLang": 3,
+            "active": 1,
+            "created_at": "2020-02-26 21:48:13",
+            "updated_at": "2020-02-26 21:48:13"
+        },
+        {
+            "id": 5,
+            "client_id": 4,
+            "picturePath": "http://localhost:8000/storage/app/public/rest_pics//IMG_20181123_172310383.jpg",
+            "logoPath": "http://localhost:8000/storage/app/public/rest_logos//Program-code-software.jpg",
+            "defaultLang": 2,
+            "active": 1,
+            "created_at": "2020-02-26 21:49:34",
+            "updated_at": "2020-02-26 21:49:34"
+        }
+    ],
+    "links": {
+        "first": "http://127.0.0.1:8000/api/menu?page=1",
+        "last": "http://127.0.0.1:8000/api/menu?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "path": "http://127.0.0.1:8000/api/menu",
+        "per_page": 15,
+        "to": 4,
+        "total": 4
+    }
+}
