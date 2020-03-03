@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuService } from '../menu.service';
 
 @Component({
-  selector: '.app-menu',
+  selector: 'app-menu',
   //templateUrl: './menu.component.html',
   template: ` <h2> {{name.toUpperCase()}}</h2>
               <h2 class="text-success">{{greetUser()}}</h2>
@@ -27,10 +27,7 @@ import { MenuService } from '../menu.service';
               <p> Updated At: {{menu.updated_at}}</p>
               <p> Active: {{menu.active}}</p>
 
-              <h3>Categories</h3>
-              <ul *ngFor = "let category of categories; index as i">
-                  <li> {{category.description}}</li>
-              </ul>
+            
 
               <h3>SubCategories</h3>
               <ul *ngFor = "let subcategory of subcategories; index as i">
@@ -84,8 +81,7 @@ export class MenuComponent implements OnInit {
     this._menuService.getMenubyId(this.menu_id, this.lang_id)
         .subscribe(data => this.menu = data); 
 
-    this._menuService.getCategories (this.lang_id)
-        .subscribe(data => this.categories = data);  
+  
 
         
     this._menuService.getSubCategories (this.lang_id) 

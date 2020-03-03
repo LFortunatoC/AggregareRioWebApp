@@ -13,13 +13,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InfobartitleComponent } from './infobartitle/infobartitle.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-     NavbarComponent,
+    NavbarComponent,
     InfobartitleComponent,
+    CategoryComponent
   ],
 
   imports: [
