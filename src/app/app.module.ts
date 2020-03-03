@@ -4,17 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
-import {FooterButtonsModule} from './footer-buttons/footer-buttons.module';
 import {MatButtonModule} from '@angular/material/button';
+import { FooterBttsComponent } from './footer-btts/footer-btts.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterBttsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FooterButtonsModule,
     MatSliderModule,
     MatButtonModule
   ],

@@ -314,22 +314,10 @@
 
 <div class="content" role="main">
 
-
   <!-- Footer -->
   <footer>
-    <div *ngIf="mat-button.Click; then thenBlock else elseBlock"></div>
-    <ng-template #thenBlock>NICEEE</ng-template>
-    <ng-template #elseBlock>WROONG</ng-template>
-    
-    <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
-    
-    <button mat-button>Click HERE</button>
-    <button mat-raised-button>No raised HEREEE</button>
-    <button mat-flat-button>Maybe flat HERE</button>
-    <button mat-stroked-button>or stroked HERE</button>
+    <app-footer-btts></app-footer-btts>
   </footer>
-
-
 
 </div>
 
