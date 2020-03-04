@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+import { FooterBttsComponent } from './footer-btts/footer-btts.component';
 
 import { CommunicationComponent } from './communication/communication.component';
 import { CommunicationService } from './communication.service';
 import {HttpClientModule} from '@angular/common/http'
-import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -19,6 +21,8 @@ import { CategoryService } from './category.service';
 @NgModule({
   declarations: [
     AppComponent,
+    FooterBttsComponent,
+    MenuComponent,
     CommunicationComponent,
     NavbarComponent,
     InfobartitleComponent,
@@ -28,6 +32,7 @@ import { CategoryService } from './category.service';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatSliderModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
