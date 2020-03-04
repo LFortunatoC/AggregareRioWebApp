@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class MenuService {
+export class CommunicationService {
   private MenuUrl: string = 'http://127.0.0.1:8000/api/menu/';
   private CategoryUrl: string = 'http://127.0.0.1:8000/api/category/searchcategory/';
   private SubCategoryUrl: string = 'http://127.0.0.1:8000/api/subcategory/searchsubcategory/';

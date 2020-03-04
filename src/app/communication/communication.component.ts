@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuService } from '../menu.service';
+import {CommunicationService } from '../communication.service';
 
 @Component({
   selector: 'app-menu',
@@ -45,7 +45,7 @@ import { MenuService } from '../menu.service';
               .text-special{font-style:italic;}
           `]
 })
-export class MenuComponent implements OnInit {
+export class CommunicationComponent implements OnInit {
 
   public name = "Menu";
   public successClass  = "text-success";
@@ -64,10 +64,10 @@ export class MenuComponent implements OnInit {
   public items: any;
 
   public menu_id = 4;
-  public lang_id = 1;
+  public lang_id = 3;
   public category_id = 1;
   public subCategory_id=1;
-  constructor(private _menuService : MenuService) { }
+  constructor(private _menuService : CommunicationService) { }
 
   ngOnInit(): void {
     this._menuService.getMenu()
@@ -80,15 +80,12 @@ export class MenuComponent implements OnInit {
 
     this._menuService.getMenubyId(this.menu_id, this.lang_id)
         .subscribe(data => this.menu = data); 
-
-  
-
-        
+     
     this._menuService.getSubCategories (this.lang_id) 
         .subscribe(data => this.subcategories = data);  
 
-    this._menuService.getItems (this.menu_id, this.category_id, this.subCategory_id, this.lang_id)
-    .subscribe(data => this.items = data);         
+    // this._menuService.getItems (this.menu_id, this.category_id, this.subCategory_id, this.lang_id)
+    // .subscribe(data => this.items = data);         
   }
 
   greetUser() {
