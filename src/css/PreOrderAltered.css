@@ -1,0 +1,852 @@
+.mediaViewInfo {
+	--web-view-name: PreOrderAltered;
+	--web-view-id: PreOrderAltered;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: PreOrderAltered;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#PreOrderAltered {
+	position: absolute;
+	width: 800px;
+	height: 1280px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: PreOrderAltered;
+	--web-view-id: PreOrderAltered;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+.Rectangle_1470 {
+	position: absolute;
+	overflow: visible;
+	width: 801px;
+	height: 1280px;
+	left: 0px;
+	top: -5px;
+}
+#Image_5 {
+	opacity: 0.4;
+	position: absolute;
+	width: 842.32px;
+	height: 1336px;
+	left: -10px;
+	top: 0px;
+	overflow: visible;
+}
+.bg {
+	position: absolute;
+	overflow: visible;
+	width: 800px;
+	height: 200px;
+	left: 1px;
+	top: -5px;
+}
+#Pre_Order_ {
+	position: absolute;
+	left: 49px;
+	top: 100px;
+	overflow: visible;
+	width: 214px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 43px;
+	color: rgba(147,0,0,1);
+}
+#ID05_items {
+	position: absolute;
+	left: 49px;
+	top: 147px;
+	overflow: visible;
+	width: 118px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(238,236,225,1);
+}
+#Group_72 {
+	position: absolute;
+	width: 401px;
+	height: 156px;
+	left: 0px;
+	top: 1124px;
+	overflow: visible;
+}
+.Rectangle_1016 {
+	position: absolute;
+	overflow: visible;
+	width: 401px;
+	height: 156px;
+	left: 0px;
+	top: 0px;
+}
+#CALL_WAITER {
+	position: absolute;
+	left: 77px;
+	top: 57px;
+	overflow: visible;
+	width: 260px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 38px;
+	color: rgba(255,255,255,1);
+}
+.Rectangle_1028 {
+	position: absolute;
+	overflow: visible;
+	width: 401px;
+	height: 156px;
+	left: 401px;
+	top: 1124px;
+}
+#ORDER {
+	position: absolute;
+	left: 513px;
+	top: 1181px;
+	overflow: visible;
+	width: 138px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s linear;
+	--web-action-type: view;
+	--web-action-target: Order_Confirmation_Popup;
+	cursor: pointer;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 38px;
+	color: rgba(255,255,255,1);
+}
+#ID15 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	left: 673px;
+	top: 98px;
+	overflow: visible;
+	width: 68px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	color: rgba(255,255,255,1);
+}
+#Group_92 {
+	position: absolute;
+	width: 800px;
+	height: 66px;
+	left: 0px;
+	top: 275px;
+	overflow: visible;
+}
+.Rectangle_319 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 818px;
+	height: 83px;
+	left: 0px;
+	top: 1px;
+}
+#Fall_for_Chicken_Bowtie_Pasta_ {
+	position: absolute;
+	left: 27px;
+	top: 16px;
+	overflow: visible;
+	width: 455px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID35_00 {
+	position: absolute;
+	left: 481px;
+	top: 16px;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID2 {
+	position: absolute;
+	left: 696px;
+	top: 16px;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_90 {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 618px;
+	top: 4px;
+	overflow: visible;
+}
+#Group_88 {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475 {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+}
+#_ {
+	position: absolute;
+	left: 15px;
+	top: 11px;
+	overflow: visible;
+	width: 12px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_89 {
+	position: absolute;
+	width: 40px;
+	height: 65px;
+	left: 738px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475_bh {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 65px;
+	left: 0px;
+	top: 0px;
+}
+#__bi {
+	position: absolute;
+	left: 11px;
+	top: 17px;
+	overflow: visible;
+	width: 20px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+.Rectangle_319_bj {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 818px;
+	height: 83px;
+	left: 0px;
+	top: 379px;
+}
+#Fall_for_Beef_Bowtie_____ {
+	position: absolute;
+	left: 27px;
+	top: 394px;
+	overflow: visible;
+	width: 323px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID22_00 {
+	position: absolute;
+	left: 481px;
+	top: 394px;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID2_bm {
+	position: absolute;
+	left: 696px;
+	top: 394px;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_90_bn {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 618px;
+	top: 382px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: PreOrder;
+	cursor: pointer;
+}
+#Group_88_bo {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475_bp {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+}
+#__bq {
+	position: absolute;
+	left: 15px;
+	top: 11px;
+	overflow: visible;
+	width: 12px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_89_br {
+	position: absolute;
+	width: 40px;
+	height: 65px;
+	left: 738px;
+	top: 378px;
+	overflow: visible;
+}
+.Rectangle_1475_bs {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 65px;
+	left: 0px;
+	top: 0px;
+}
+#__bt {
+	position: absolute;
+	left: 11px;
+	top: 17px;
+	overflow: visible;
+	width: 20px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_94 {
+	position: absolute;
+	width: 800px;
+	height: 66px;
+	left: 0px;
+	top: 481px;
+	overflow: visible;
+}
+.Rectangle_319_bv {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 818px;
+	height: 83px;
+	left: 0px;
+	top: 1px;
+}
+#Chicken_Pasta____ {
+	position: absolute;
+	left: 27px;
+	top: 16px;
+	overflow: visible;
+	width: 243px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID19_00 {
+	position: absolute;
+	left: 481px;
+	top: 16px;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID1 {
+	position: absolute;
+	left: 696px;
+	top: 16px;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_90_bz {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 618px;
+	top: 4px;
+	overflow: visible;
+}
+#Group_88_b {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475_b {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+}
+#__b {
+	position: absolute;
+	left: 15px;
+	top: 11px;
+	overflow: visible;
+	width: 12px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_89_b {
+	position: absolute;
+	width: 40px;
+	height: 65px;
+	left: 738px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475_ca {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 65px;
+	left: 0px;
+	top: 0px;
+}
+#__ca {
+	position: absolute;
+	left: 11px;
+	top: 17px;
+	overflow: visible;
+	width: 20px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_95 {
+	position: absolute;
+	width: 800px;
+	height: 66px;
+	left: 0px;
+	top: 584px;
+	overflow: visible;
+}
+.Rectangle_319_b {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 818px;
+	height: 83px;
+	left: 0px;
+	top: 1px;
+}
+#Pork_Bowtie_Pasta____ {
+	position: absolute;
+	left: 27px;
+	top: 16px;
+	overflow: visible;
+	width: 298px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID19_00_b {
+	position: absolute;
+	left: 481px;
+	top: 16px;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID1_ca {
+	position: absolute;
+	left: 696px;
+	top: 16px;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_90_cb {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 618px;
+	top: 4px;
+	overflow: visible;
+}
+#Group_88_cc {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475_cd {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+}
+#__ce {
+	position: absolute;
+	left: 15px;
+	top: 11px;
+	overflow: visible;
+	width: 12px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_89_cf {
+	position: absolute;
+	width: 40px;
+	height: 65px;
+	left: 738px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475_cg {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 65px;
+	left: 0px;
+	top: 0px;
+}
+#__ch {
+	position: absolute;
+	left: 11px;
+	top: 17px;
+	overflow: visible;
+	width: 20px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_96 {
+	position: absolute;
+	width: 800px;
+	height: 66px;
+	left: 0px;
+	top: 687px;
+	overflow: visible;
+}
+.Rectangle_319_cj {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 818px;
+	height: 83px;
+	left: 0px;
+	top: 1px;
+}
+#Chicken_Bowtie_Pasta_Special__ {
+	position: absolute;
+	left: 27px;
+	top: 16px;
+	overflow: visible;
+	width: 462px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID42_00 {
+	position: absolute;
+	left: 481px;
+	top: 16px;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#ID1_cm {
+	position: absolute;
+	left: 696px;
+	top: 16px;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_90_cn {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 618px;
+	top: 4px;
+	overflow: visible;
+}
+#Group_88_co {
+	position: absolute;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475_cp {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 61px;
+	left: 0px;
+	top: 0px;
+}
+#__cq {
+	position: absolute;
+	left: 15px;
+	top: 11px;
+	overflow: visible;
+	width: 12px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Group_89_cr {
+	position: absolute;
+	width: 40px;
+	height: 65px;
+	left: 738px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1475_cs {
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 65px;
+	left: 0px;
+	top: 0px;
+}
+#__ct {
+	position: absolute;
+	left: 11px;
+	top: 17px;
+	overflow: visible;
+	width: 20px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+#Menu_Main {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	left: 315px;
+	top: 18px;
+	overflow: visible;
+	width: 218px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: MainMenu;
+	cursor: pointer;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	color: rgba(255,255,255,1);
+}
+#_7 {
+	position: absolute;
+	width: 45.804px;
+	height: 45.804px;
+	left: 51px;
+	top: 13px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: Item_Detail__1;
+	cursor: pointer;
+}
+.Path_10 {
+	overflow: visible;
+	position: absolute;
+	width: 45.804px;
+	height: 45.804px;
+	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#Name__________________________ {
+	position: absolute;
+	left: 42px;
+	top: 228px;
+	overflow: visible;
+	width: 699px;
+	height: 36px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}

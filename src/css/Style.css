@@ -1,0 +1,187 @@
+.mediaViewInfo {
+	--web-view-name: MainMenu Languages;
+	--web-view-id: MainMenu_Languages;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+	
+	
+	
+	
+}
+:root {
+	--web-view-ids: MainMenu_Languages;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#MainMenu_Languages {
+	position: absolute;
+	width: 800px;
+	height: 1280px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: MainMenu Languages;
+	--web-view-id: MainMenu_Languages;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+.Rectangle_1476 {
+	position: absolute;
+	overflow: visible;
+	width: 799px;
+	height: 1280px;
+	left: 0px;
+	top: 0px;
+}
+#Image_5 {
+	opacity: 0.4;
+	position: absolute;
+	width: 1280px;
+	height: 1280px;
+	left: -483px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_1011 {
+	position: absolute;
+	overflow: visible;
+	width: 800px;
+	height: 200px;
+	left: -1px;
+	top: 1080px;
+}
+#CALL_WAITER {
+	position: absolute;
+	left: 284px;
+	top: 1163px;
+	overflow: visible;
+	width: 287px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	color: rgba(238,236,225,1);
+}
+.Rectangle_1016 {
+	position: absolute;
+	overflow: visible;
+	width: 401px;
+	height: 156px;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_1028 {
+	position: absolute;
+	overflow: visible;
+	width: 401px;
+	height: 156px;
+	left: 401px;
+	top: 0px;
+}
+#Menu {
+	position: absolute;
+	left: 149px;
+	top: 61px;
+	overflow: visible;
+	width: 111px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	color: rgba(238,236,225,1);
+}
+#LANGUAGES {
+	position: absolute;
+	left: 494px;
+	top: 59px;
+	overflow: visible;
+	width: 269px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	color: rgba(238,236,225,1);
+}
+#ID188px_Flag_of_France_svg {
+	position: absolute;
+	width: 316px;
+	height: 196px;
+	left: 76px;
+	top: 200px;
+	overflow: visible;
+}
+#ID383px_Flag_of_the_United_Kin {
+	position: absolute;
+	width: 316px;
+	height: 196px;
+	left: 411px;
+	top: 200px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: MainMenu;
+	cursor: pointer;
+}
+#flag_of_China {
+	position: absolute;
+	width: 316px;
+	height: 196px;
+	left: 76px;
+	top: 415px;
+	overflow: visible;
+}
+#ID300px_Flag_of_Spain_svg {
+	position: absolute;
+	width: 316px;
+	height: 196px;
+	left: 411px;
+	top: 415px;
+	overflow: visible;
+}
+#flag_of_India {
+	position: absolute;
+	width: 316px;
+	height: 197px;
+	left: 76px;
+	top: 629px;
+	overflow: visible;
+}
+#flag_of_China_ {
+	position: absolute;
+	width: 316px;
+	height: 197px;
+	left: 411px;
+	top: 629px;
+	overflow: visible;
+}
+#flag_of_Iran {
+	position: absolute;
+	width: 316px;
+	height: 197px;
+	left: 76px;
+	top: 844px;
+	overflow: visible;
+}
+#flag_of_Brazil {
+	position: absolute;
+	width: 316px;
+	height: 197px;
+	left: 411px;
+	top: 844px;
+	overflow: visible;
+}
