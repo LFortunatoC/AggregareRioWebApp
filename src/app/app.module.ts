@@ -5,8 +5,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { MenuComponent } from './menu/menu.component';
-import { MenuService } from './menu.service';
+import { CommunicationComponent } from './communication/communication.component';
+import { CommunicationService } from './communication.service';
 import {HttpClientModule} from '@angular/common/http'
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -14,11 +14,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InfobartitleComponent } from './infobartitle/infobartitle.component';
 import { CategoryComponent } from './category/category.component';
+import { CategoryService } from './category.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
+    CommunicationComponent,
     NavbarComponent,
     InfobartitleComponent,
     CategoryComponent
@@ -32,7 +33,7 @@ import { CategoryComponent } from './category/category.component';
     MatToolbarModule,
     HttpClientModule
   ],
-  providers: [MenuService],
+  providers: [CommunicationService, CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
