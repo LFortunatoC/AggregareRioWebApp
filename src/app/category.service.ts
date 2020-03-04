@@ -1,5 +1,7 @@
-import { Injectable } from '@angular/core';
-import { MenuService } from './menu.service';
+import { Injectable, ɵConsole } from '@angular/core';
+import { CommunicationService } from './communication.service';
+import { Subject } from 'rxjs';
+import {ICategory} from './categorySubCategory'
 
 @Injectable({
   providedIn: 'root'
@@ -7,18 +9,24 @@ import { MenuService } from './menu.service';
 export class CategoryService {
 
   public menu: any;
-  public categories: any;
-  public menu_id = 4;
+  public categories;
+  private messageSource = new Subject<ICategory>();
+  messageSource$ = this.messageSource.asObservable();
 
+  constructor(private CommService : CommunicationService ) {
 
-  constructor(private _menuService : MenuService) {
+  }
 
+  changeMessage(category: any) {
+    this.messageSource.next(category)
   }
 
     getCategories(lang_id) 
     {
-      this._menuService.getCategories (lang_id)
-      .subscribe(data => this.categories = data); 
+      this.CommService.getCategories (lang_id)
+      .subscribe(data => {
+         this.categories = data;
+      }); 
       return this.categories;
     } 
 }
