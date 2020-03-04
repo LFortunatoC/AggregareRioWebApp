@@ -22,7 +22,6 @@ import { CategoryService } from './category.service';
   declarations: [
     AppComponent,
     FooterBttsComponent,
-    MenuComponent,
     CommunicationComponent,
     NavbarComponent,
     InfobartitleComponent,
