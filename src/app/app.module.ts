@@ -16,17 +16,19 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InfobartitleComponent } from './infobartitle/infobartitle.component';
 import { CategoryComponent } from './category/category.component';
-import { CategoryService } from './category.service';
+import { ItemComponent } from './item/item.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterBttsComponent,
-    MenuComponent,
     CommunicationComponent,
     NavbarComponent,
     InfobartitleComponent,
-    CategoryComponent
+    CategoryComponent,
+    ItemComponent,
+    OrderComponent
   ],
 
   imports: [
@@ -38,7 +40,7 @@ import { CategoryService } from './category.service';
     MatToolbarModule,
     HttpClientModule
   ],
-  providers: [CommunicationService, CategoryService],
+  providers: [CommunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

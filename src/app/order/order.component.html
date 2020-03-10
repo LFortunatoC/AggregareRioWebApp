@@ -1,0 +1,15 @@
+<div>
+    <h2>Order by Id </h2>
+    <h3>Order Id = {{order.id}}</h3>
+    <h3>Table Number = {{order.tableNumber}}</h3>
+    <h3>Canceled :  {{order.canceled}}</h3>
+    <h3>Delivered At: = {{order.deliveredAt}}</h3>
+    <h3>Created At = {{order.created_at}}</h3>
+    <h3>Updated At = {{order.created_at}}</h3>
+
+    
+    <p> itemOrdered.id - order.id- item.id - quantity - Price - Canceled - Created At - Updated At</p>
+    <ul *ngFor = "let item of order.items index as i">
+        <li> {{item.id}}    -    {{item.order_id}}   -    {{item.item_id}}   -   {{item.qty}}   -   {{item.currPrice}}   -   {{item.canceled}}   -   {{item.created_at}} - {{item.updated_at}} </li>
+    </ul>
+    </div>

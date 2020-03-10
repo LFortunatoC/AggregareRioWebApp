@@ -9,7 +9,7 @@ import {CommunicationService} from './../communication.service';
 export class CategoryComponent implements OnInit {
 
   categories: any;
-  lang_id = 1 ;
+  lang_id = 2 ;
   constructor(private service : CommunicationService) {
      this.getCategories(this.lang_id)
 
