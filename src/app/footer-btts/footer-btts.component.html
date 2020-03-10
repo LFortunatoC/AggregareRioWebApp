@@ -1,9 +1,10 @@
 <div>
-<button mat-raised-button (click)="clickToggle(); showBillBtt(clickOnandOff)">Toggle bill</button>
+<button class="buttonFooter" mat-raised-button color="warm">{{bttCallWaiterText}}</button>
+<button class="buttonFooter" mat-raised-button (click)="clickToggle(); showBillBtt(clickOnandOff)">Toggle bill</button>
+<button class="buttonFooter" *ngIf="billflag" mat-raised-button color="warn">{{bttBillText}}</button>
 <p>Value of Toggle {{clickOnandOff}}</p>
 </div>
 
 <div>
-    <button mat-raised-button color="warn">{{bttCallWaiterText}}</button>
-    <button *ngIf="billflag" mat-raised-button color="warn">{{bttBillText}}</button>
+   
 </div>

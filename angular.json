@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "AggregareRioWebApp"
+  "defaultProject": "AggregareRioWebApp",
+  "cli": {
+    "analytics": false
+  }
 }

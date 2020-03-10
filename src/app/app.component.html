@@ -1,13 +1,14 @@
 <!--Components-->
-
-<div><app-navbar></app-navbar></div>
-<div><app-infobartitle [parentData]="name"></app-infobartitle></div>
-
-<div> <app-menu></app-menu></div>
-<div><app-category></app-category></div>
-<app-item></app-item>
-<app-order></app-order>
-<div><app-footer-btts></app-footer-btts></div>
+<div class="header">
+    <app-navbar></app-navbar>
+    <app-infobartitle [parentData]="name"></app-infobartitle>
+</div>
+<div class="body">
+   <app-category></app-category>
+</div>
+<div class="footer"> 
+    <app-footer-btts></app-footer-btts>
+</div>
 
 
 
