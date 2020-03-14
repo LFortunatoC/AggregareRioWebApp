@@ -8,11 +8,12 @@ import {CommunicationService} from './../communication.service';
 })
 export class CategoryComponent implements OnInit {
 
+  title = 'AggregareRioWebApp';
+  public name = 'Category';
   categories: any;
-  lang_id = 1 ;
+  lang_id = 3 ;
   constructor(private service : CommunicationService) {
      this.getCategories(this.lang_id)
-
    }
 
    getCategories (lang_id){

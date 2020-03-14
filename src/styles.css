@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.header {
+    height: 70px;
+    background-color:#FFB35D;
+    
+}
+
+.body {
+    height: 440px;
+    background-color: #EEECE1;
+}
+
+.footer {
+    background-color: #000000;
+}
+
+

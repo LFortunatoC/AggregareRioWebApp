@@ -1,0 +1,11 @@
+.list-group-item {
+    vertical-align: middle;
+    background-color: #CECCC0;
+    line-height: 45px;
+    width: 100%;
+    font-size: 20px;
+    font-variant-caps: titling-caps;
+    color: #FFFFFF;
+}
+
+    

@@ -1,10 +1,5 @@
-.navBar {
-    width: 100%;
-    background-color: #FFB35D;
-}
-
 #backBtt {
-    width: 120px;
+    width: 25%px;
     color: #930000;
     font-size: medium;
     float: left;
@@ -12,10 +7,9 @@
 }
 
 #menuBtt {
-    width: 120px;
+    min-width: 47%;
     color: #930000;
     display: block;
-    margin-left: 66%;
-    
     font-size: medium;
+    float: left;
 }
