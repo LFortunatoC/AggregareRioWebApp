@@ -4,9 +4,17 @@
     <app-infobartitle [parentData]="name"></app-infobartitle>
 </div>
 <div class="body">
-   <app-category></app-category>
+   <router-outlet></router-outlet>
+</div>
+<div>
+    <a routerLink='/category'>Category</a>
+    <br/>
+    <a routerLink='/item'>Item</a>
+    <br/>
+    <a routerLink= '/order'>Order</a>
 </div>
 <div class="footer"> 
+    
     <app-footer-btts></app-footer-btts>
 </div>
 
