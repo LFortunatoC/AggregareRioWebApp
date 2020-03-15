@@ -84,7 +84,7 @@ export class CommunicationComponent implements OnInit {
     this._menuService.getSubCategories (this.lang_id) 
         .subscribe(data => this.subcategories = data);  
 
-    // this._menuService.getItems (this.menu_id, this.category_id, this.subCategory_id, this.lang_id)
+    //this._menuService.getItems (this.menu_id, this.category_id, this.subCategory_id, this.lang_id)
     // .subscribe(data => this.items = data);         
   }
 

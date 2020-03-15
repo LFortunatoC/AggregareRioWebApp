@@ -1,4 +1,26 @@
+<<<<<<< HEAD
 <app-category></app-category>
+=======
+<!--Components-->
+<div class="header">
+    <app-navbar></app-navbar>
+    <app-infobartitle [parentData]="name"></app-infobartitle>
+</div>
+<div class="body">
+   <router-outlet></router-outlet>
+</div>
+<div>
+    <a routerLink='/category'>Category</a>
+    <br/>
+    <a routerLink='/item'>Item</a>
+    <br/>
+    <a routerLink= '/order'>Order</a>
+</div>
+<div class="footer"> 
+    
+    <app-footer-btts></app-footer-btts>
+</div>
+>>>>>>> issue-add-routing
 
 
 
