@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-=======
 import {CommunicationService} from './../communication.service';
->>>>>>> issue-add-routing
 
 @Component({
   selector: 'app-order',
@@ -10,10 +7,6 @@ import {CommunicationService} from './../communication.service';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-<<<<<<< HEAD
-
-  constructor() { }
-=======
   order: any;
   order_id = 2;
   constructor(private service : CommunicationService) {
@@ -28,7 +21,6 @@ export class OrderComponent implements OnInit {
        this.order = data;
     }); 
    }
->>>>>>> issue-add-routing
 
   ngOnInit(): void {
   }

@@ -11,11 +11,7 @@ export class CategoryComponent implements OnInit {
   title = 'AggregareRioWebApp';
   public name = 'Category';
   categories: any;
-<<<<<<< HEAD
   lang_id = 3 ;
-=======
-  lang_id = 2 ;
->>>>>>> issue-add-routing
   constructor(private service : CommunicationService) {
      this.getCategories(this.lang_id)
    }
