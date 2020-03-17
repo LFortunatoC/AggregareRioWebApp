@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams  } from '@angular/common/http';
 import { IMenu } from './menu';
-import { ICategory, ISubCategory } from './category/categorySubCategory';
+import { ICategory} from './category/categorySubCategory';
+import { ISubCategory} from './subcategory/subcategory';
 import {IItem} from './item/item';
 import {IOrder} from './order/order'
 
