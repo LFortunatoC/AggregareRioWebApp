@@ -16,11 +16,11 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AggregareRioWebApp'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('AggregareRioWebApp');
-  });
+  // it(`should have as title 'AggregareRioWebApp'`, () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const app = fixture.componentInstance;
+  //   expect(app.title).toEqual('AggregareRioWebApp');
+  // });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);

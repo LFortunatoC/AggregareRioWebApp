@@ -5,10 +5,12 @@
     </div>
 </div>
 <div class="body">
-    <ul class="list-group" *ngFor = "let category of categories; index as i" >
-        <li class="list-group-item" (click)="selectItem()">{{category.description}}</li>
+    <h1>Item Works</h1>
+    <ul class="list-group" *ngFor = "let item of items; index as i" >
+        <li class="list-group-item">{{item.id}} - {{item.category_id}} - {{item.subCategory_id}} - {{item.menu_id}} - {{item.picturePath}}</li>
     </ul>
 </div>
 <div class="footer"> 
     <app-footer-btts></app-footer-btts>
 </div>
+
