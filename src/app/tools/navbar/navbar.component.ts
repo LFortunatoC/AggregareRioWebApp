@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Location} from '@angular/common';
-import {Router} from '@angular/router';
+import { Router, RouterModule, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,19 +9,26 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-
   constructor(private location: Location) { }
   
-
   ngOnInit(): void {
   }
 
-  btBack(){
-    this.location.back();
+  btBack() {
+    if (!this.location.isCurrentPathEqualTo(window.location.href="/cover")) {
+      this.location.back();
+    } else {
+      window.location.href="./cover";
+    }
+      }
+
+  btMenu() {
+    window.location.href="./category";
   }
 
-  btMenu(){
-    window.location.href='https://angular.io/start';
+  btLang() {
+    ;
   }
 
+  
 }

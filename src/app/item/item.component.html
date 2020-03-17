@@ -1,7 +1,16 @@
-<div>
-    <h3>Items </h3>
-    <p> item.id - item.category_id- item.subCategory_id - item.menu_id - item.picturePath - item.value - item.active - item.title - item.description</p>
-    <ul *ngFor = "let item of items; index as i">
-        <li> {{item.id}}    -    {{item.category_id}}   -    {{item.subCategory_id}}   -   {{item.menu_id}}   -   {{item.picturePath}}   -   {{item.value}}   -   {{item.active}} - {{item.title}} - {{item.description}}</li>
-    </ul>
+<div class="header">
+    <app-navbar></app-navbar>
+    <div class="title">
+        <app-infobartitle #title [parentData]="name"></app-infobartitle>
     </div>
+</div>
+<div class="body">
+    <h1>Item Works</h1>
+    <ul class="list-group" *ngFor = "let item of items; index as i" >
+        <li class="list-group-item">{{item.id}} - {{item.category_id}} - {{item.subCategory_id}} - {{item.menu_id}} - {{item.picturePath}}</li>
+    </ul>
+</div>
+<div class="footer"> 
+    <app-footer-btts></app-footer-btts>
+</div>
+

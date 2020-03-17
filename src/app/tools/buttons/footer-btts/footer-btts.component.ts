@@ -17,10 +17,12 @@ export class FooterBttsComponent
     if (this.clickOnandOff === 0) 
     {
       this.clickOnandOff = 1;
+      this.bttBillText = " Order ";
     }
     else
     {
       this.clickOnandOff = 0;
+      this.bttBillText = " Bill ";
     }
   }
 

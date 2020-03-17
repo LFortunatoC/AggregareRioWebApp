@@ -1,3 +1,4 @@
+import { items } from './../order/order';
 import { Component, OnInit } from '@angular/core';
 import {CommunicationService} from './../communication.service';
 
@@ -14,6 +15,7 @@ export class CategoryComponent implements OnInit {
   lang_id = 3 ;
   constructor(private service : CommunicationService) {
      this.getCategories(this.lang_id)
+     
    }
 
    getCategories (lang_id){
@@ -22,6 +24,11 @@ export class CategoryComponent implements OnInit {
        this.categories = data;
     }); 
    }
+
+   selectItem() {
+   window.location.href="./item";
+   }
+   
 
   ngOnInit(): void {
     

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreOrderComponent implements OnInit {
 
+  name = "preOrder";
   constructor() { }
 
   ngOnInit(): void {

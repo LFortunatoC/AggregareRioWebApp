@@ -12,7 +12,7 @@ import {PreOrderComponent} from './pre-order/pre-order.component';
 //import {SubCategoryComponent} from './subcategory/subcategory.component';
 
 const routes: Routes = [
-    {path:"", redirectTo: '/category', pathMatch: 'full' },
+    { path:"", redirectTo: '/cover', pathMatch: 'full' },
     { path: 'bill', component: BillComponent},
     { path: 'category', component: CategoryComponent},
     { path: 'cover', component: CoverComponent},

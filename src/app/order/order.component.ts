@@ -7,6 +7,7 @@ import {CommunicationService} from './../communication.service';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
+  name = "Order";
   order: any;
   order_id = 2;
   constructor(private service : CommunicationService) {

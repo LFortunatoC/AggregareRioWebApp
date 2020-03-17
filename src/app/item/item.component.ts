@@ -8,6 +8,8 @@ import {CommunicationService} from './../communication.service';
 })
 export class ItemComponent implements OnInit {
 
+  name = "Items"; //should be changed for a name retrived from table
+
   items: any;
   parameters = {
       lang_id: 1,

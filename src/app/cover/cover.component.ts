@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoverComponent implements OnInit {
 
+  name="Cover";
   constructor() { }
+
+  startApp() {
+    window.location.href="./category";
+  }
 
   ngOnInit(): void {
   }

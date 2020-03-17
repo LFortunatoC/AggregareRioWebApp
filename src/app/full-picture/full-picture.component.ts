@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullPictureComponent implements OnInit {
 
+  name="fullPicture";
   constructor() { }
 
   ngOnInit(): void {
