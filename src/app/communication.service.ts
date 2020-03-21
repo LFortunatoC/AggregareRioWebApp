@@ -4,7 +4,9 @@ import { IMenu } from './menu';
 import { ICategory} from './category/categorySubCategory';
 import { ISubCategory} from './subcategory/subcategory';
 import {IItem} from './item/item';
-import {IOrder} from './order/order'
+import {IOrder} from './order/order';
+import {ICover} from './cover/cover';
+import {IFull} from './full-picture/full-picture'
 
 import { Observable } from 'rxjs';
 
@@ -17,7 +19,8 @@ export class CommunicationService {
   private SubCategoryUrl: string = 'http://127.0.0.1:8000/api/subcategory/searchsubcategory/';
   private ItemsUrl: string  = 'http://127.0.0.1:8000/api/item/search/';
   private OrderUrl: string =  'http://127.0.0.1:8000/api/order/';
-
+  private CoverUrl: string = 'http://127.0.0.1:8000/api/public/storage/app/public/restaurants'
+  private FullUrl: string = 'http://127.0.0.1:8000/api/public/storage/app/public/items/pics'
   constructor(private http: HttpClient) { }
 
   // Http Headers
@@ -37,6 +40,15 @@ export class CommunicationService {
     return this.http.get<IMenu[]>(this.MenuUrl + id,{
       params: new HttpParams().set('language_id', language_id)}
       );
+  }
+
+  //Communications for cover
+  getCovers (menu_id) :Observable <ICover[]> {
+    return this.http.get<ICover[]>(this.CoverUrl + menu_id);
+  }
+
+  getFullPictures(item_id):Observable <IFull[]>{
+    return this.http.get<IFull[]>(this.FullUrl + item_id);
   }
 
   getCategories (language_id): Observable <ICategory[]> {
