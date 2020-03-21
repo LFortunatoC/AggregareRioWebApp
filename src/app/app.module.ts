@@ -28,8 +28,10 @@ import { PreOrderComponent } from './pre-order/pre-order.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ButtonsComponent } from './tools/buttons/buttons.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ButtonQtComponent } from './button-qt/button-qt.component';
+import { ItemOrdersComponent } from './item-orders/item-orders.component';
+import { ChecklistComponent } from './tools/checklist/checklist.component';
 import { SubcategoryComponent } from './subcategory/subcategory.component';
-
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
@@ -50,6 +52,10 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     ButtonsComponent,
     RoutingComponents,
     PageNotFoundComponent,
+    //PreOrder_History_Pages,
+    ButtonQtComponent,
+    ItemOrdersComponent,
+    ChecklistComponent,
     SubcategoryComponent
   ],
 

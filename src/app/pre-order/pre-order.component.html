@@ -6,6 +6,23 @@
 </div>
 <div class="body">
     <h1>Pre-Order Works</h1>
+  <h3>Name</h3>
+  <h3>unit Price</h3>
+  <h3>Qt</h3>
+
+<h2>Table</h2>
+{{table}}
+
+
+    <ul class="list-group" *ngFor = "let preOrder of preOrders; index as i" >
+        <li class="list-group-preOrder">  {{preOrder.title}} </li>
+        <li class="list-group-preOrder">  {{preOrder.value}} </li>
+       
+<app-button-qt></app-button-qt>
+      
+    </ul>     
+      
+    
 </div>
 <div class="footer"> 
     <app-footer-btts></app-footer-btts>

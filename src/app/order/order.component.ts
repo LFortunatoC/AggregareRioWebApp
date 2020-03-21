@@ -10,9 +10,12 @@ export class OrderComponent implements OnInit {
   name = "Order";
   order: any;
   order_id = 2;
+  
+
+  
   constructor(private service : CommunicationService) {
     this.getOrder(this.order_id)
-  
+    
    }
 
 
@@ -22,6 +25,9 @@ export class OrderComponent implements OnInit {
        this.order = data;
     }); 
    }
+
+  
+
 
   ngOnInit(): void {
   }
