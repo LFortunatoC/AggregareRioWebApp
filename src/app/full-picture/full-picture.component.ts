@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CommunicationService} from './../communication.service';
+import {CommunicationService} from '../communication/communication.service';
 
 @Component({
   selector: 'app-full-picture',
@@ -12,6 +12,7 @@ export class FullPictureComponent implements OnInit {
   menu_id=3;
   name="fullPicture";
   fullPictures:any;
+  
   constructor(private service: CommunicationService) { 
     this.getFullPictures(this.menu_id)
   }

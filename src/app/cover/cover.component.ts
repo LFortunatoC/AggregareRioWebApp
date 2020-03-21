@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CommunicationService} from './../communication.service';
+import {CommunicationService} from '../communication/communication.service';
 
 @Component({
   selector: 'app-cover',
@@ -11,6 +11,7 @@ export class CoverComponent implements OnInit {
   menu_id=3;
   name="Cover";
   covers:any;
+  
   lang_id:any;
   constructor(private service: CommunicationService) {
     this.getCovers(this.menu_id)
