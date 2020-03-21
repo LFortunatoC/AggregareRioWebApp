@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams  } from '@angular/common/http';
-import { IMenu } from './menu';
-import { ICategory} from './category/categorySubCategory';
-import { ISubCategory} from './subcategory/subcategory';
-import {IItem} from './item/item';
-import {IOrder} from './order/order'
+import { IMenu } from '../menu';
+import { ICategory} from '../category/categorySubCategory';
+import { ISubCategory} from '../subcategory/subcategory';
+import {IItem} from '../item/item';
+import {IOrder} from '../order/order'
 
 import { Observable } from 'rxjs';
 
@@ -39,19 +39,19 @@ export class CommunicationService {
       );
   }
 
-  getCategories (language_id): Observable <ICategory[]> {
-    return this.http.get<ICategory[]>(this.CategoryUrl + language_id);
+  getCategories (parameters:any): Observable <ICategory[]> {
+    return this.http.get<ICategory[]>(this.CategoryUrl + parameters.lang_id);
   }
 
-  getSubCategories (language_id): Observable <ISubCategory[]> {
-    return this.http.get<ISubCategory[]>(this.SubCategoryUrl + language_id);
+  getSubCategories (parameters:any): Observable <ISubCategory[]> {
+    return this.http.get<ISubCategory[]>(this.SubCategoryUrl + parameters.category_id +'/'+ parameters.lang_id);
   }
 
-  getItems (parameter:any):  Observable <IItem[]> {
-    return this.http.get<IItem[]>(this.ItemsUrl + parameter.menu_id, {
+  getItems (parameters:any):  Observable <IItem[]> {
+    return this.http.get<IItem[]>(this.ItemsUrl + parameters.menu_id, {
       params: new HttpParams()
-          .set('subcategory_id', parameter.subCategory_id)
-          .set('language_id', parameter.lang_id)
+          .set('subcategory_id', parameters.subCategory_id)
+          .set('language_id', parameters.lang_id)
     });
   }
 

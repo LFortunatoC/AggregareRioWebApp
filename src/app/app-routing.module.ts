@@ -10,7 +10,6 @@ import {ItemComponent} from './item/item.component';
 import {OrderComponent} from './order/order.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {PreOrderComponent} from './pre-order/pre-order.component';
-//import { SubCategoryComponent, SubcategoryComponent } from './subcategory/subcategory.component';
 
 const routes: Routes = [
     { path:"", redirectTo: '/cover', pathMatch: 'full' },
@@ -22,7 +21,6 @@ const routes: Routes = [
     { path: 'history', component: HistoryComponent},
     { path: 'item', component: ItemComponent},  
     { path: 'order', component: OrderComponent},
-  //{ path: 'subcategory' component: SubCategoryCompoment} ,    
     { path: 'pre-order', component: PreOrderComponent} ,
     { path: "**", component: PageNotFoundComponent}
 

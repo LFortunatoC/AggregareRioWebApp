@@ -6,7 +6,7 @@
 </div>
 <div class="body">
     <ul class="list-group" *ngFor = "let subcategory of subCategories; index as i" >
-        <li class="list-group-item" (click)="selectItem()">{{subcategory.description}}</li>
+        <li class="list-group-item" (click)="selectItem(subcategory.id)">{{subcategory.description}}</li>
     </ul>
 </div>
 <div class="footer"> 

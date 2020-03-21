@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CommunicationService} from './../communication.service';
+import {CommunicationService} from '../communication/communication.service';
 
 @Component({
   selector: 'app-order',

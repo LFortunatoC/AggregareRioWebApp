@@ -9,9 +9,10 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterBttsComponent } from './tools/buttons/footer-btts/footer-btts.component';
 
-import { CommunicationComponent } from './communication/communication.component';
-import { CommunicationService } from './communication.service';
-import {HttpClientModule} from '@angular/common/http'
+import { CommunicationService } from './communication/communication.service';
+import { RequestCacheService } from './communication/request-cache.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import {CominterceptorInterceptor} from './communication/cominterceptor.interceptor';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './tools/navbar/navbar.component';
@@ -29,11 +30,12 @@ import { ButtonsComponent } from './tools/buttons/buttons.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SubcategoryComponent } from './subcategory/subcategory.component';
 
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterBttsComponent,
-    CommunicationComponent,
     NavbarComponent,
     InfobartitleComponent,
     CategoryComponent,
@@ -59,9 +61,14 @@ import { SubcategoryComponent } from './subcategory/subcategory.component';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    LazyLoadImageModule
   ],
-  providers: [CommunicationService],
+  providers: [CommunicationService,
+              RequestCacheService,
+            { provide: HTTP_INTERCEPTORS, useClass: CominterceptorInterceptor, multi: true }
+  
+  ],
   bootstrap: [AppComponent, RoutingComponents]
 })
 export class AppModule { }

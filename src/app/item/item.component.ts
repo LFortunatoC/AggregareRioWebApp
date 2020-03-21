@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {CommunicationService} from './../communication.service';
+import {CommunicationService} from '../communication/communication.service';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @Component({
   selector: 'app-item',
