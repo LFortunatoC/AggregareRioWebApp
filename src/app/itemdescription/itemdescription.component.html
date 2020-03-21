@@ -1,0 +1,16 @@
+<div class="header">
+    <app-navbar></app-navbar>
+    <div class="title">
+        <app-infobartitle #title [parentData]="name"></app-infobartitle>
+    </div>
+</div>
+<div class="body">
+    <h1>item description Works!</h1>
+    <ul *ngFor = "let item of ItemDesc">
+    <li> {{item.title}} </li>
+    <li>     {{item.description}} </li>
+    </ul>
+</div>
+<div class="footer"> 
+    <app-footer-btts></app-footer-btts>
+</div>

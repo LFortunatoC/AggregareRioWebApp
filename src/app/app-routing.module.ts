@@ -10,6 +10,7 @@ import {ItemComponent} from './item/item.component';
 import {OrderComponent} from './order/order.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {PreOrderComponent} from './pre-order/pre-order.component';
+import{ ItemdescriptionComponent } from './itemdescription/itemdescription.component';
 //import { SubCategoryComponent, SubcategoryComponent } from './subcategory/subcategory.component';
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
     { path: 'order', component: OrderComponent},
   //{ path: 'subcategory' component: SubCategoryCompoment} ,    
     { path: 'pre-order', component: PreOrderComponent} ,
-    { path: "**", component: PageNotFoundComponent}
+    { path: "item-description", component: ItemdescriptionComponent},
+    { path: "**", component: PageNotFoundComponent},
 
 
 ];
@@ -45,6 +47,7 @@ export const RoutingComponents = [
                                     ItemComponent,
                                     OrderComponent, 
                                     PageNotFoundComponent,
-                                    PreOrderComponent
+                                    PreOrderComponent,
+                                    ItemdescriptionComponent
                                     //SubCategoryCompoment
                                 ]

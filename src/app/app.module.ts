@@ -28,6 +28,7 @@ import { ToolsComponent } from './tools/tools.component';
 import { ButtonsComponent } from './tools/buttons/buttons.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SubcategoryComponent } from './subcategory/subcategory.component';
+import { ItemdescriptionComponent } from './itemdescription/itemdescription.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { SubcategoryComponent } from './subcategory/subcategory.component';
     ButtonsComponent,
     RoutingComponents,
     PageNotFoundComponent,
-    SubcategoryComponent
+    SubcategoryComponent,
+    ItemdescriptionComponent
   ],
 
   imports: [

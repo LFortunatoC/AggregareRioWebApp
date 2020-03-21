@@ -7,6 +7,7 @@ import {IItem} from './item/item';
 import {IOrder} from './order/order'
 
 import { Observable } from 'rxjs';
+import { IItemTitleDesc } from './itemdescription/itemdescription';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,7 @@ export class CommunicationService {
   private SubCategoryUrl: string = 'http://127.0.0.1:8000/api/subcategory/searchsubcategory/';
   private ItemsUrl: string  = 'http://127.0.0.1:8000/api/item/search/';
   private OrderUrl: string =  'http://127.0.0.1:8000/api/order/';
+  private ItemDescUrl: string =  'http://127.0.0.1:8000/api/itemtitledesc/';
 
   constructor(private http: HttpClient) { }
 
@@ -57,5 +59,12 @@ export class CommunicationService {
 
   getOrder (order_id) :Observable <IOrder[]> {
     return this.http.get<IOrder[]>(this.OrderUrl + order_id);
+  }
+
+  getItemDesc (ItemDesc_parameter:any):  Observable <IItemTitleDesc[]> {
+    return this.http.get<IItemTitleDesc[]>(this.ItemDescUrl + ItemDesc_parameter.item_id, {
+      params: new HttpParams()
+          .set('language_id', ItemDesc_parameter.language_id)
+    });
   }
 }
