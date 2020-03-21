@@ -30,7 +30,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ButtonQtComponent } from './button-qt/button-qt.component';
 import { ItemOrdersComponent } from './item-orders/item-orders.component';
 import { ChecklistComponent } from './tools/checklist/checklist.component';
-
+import { SubcategoryComponent } from './subcategory/subcategory.component';
 
 
 @NgModule({
@@ -52,11 +52,11 @@ import { ChecklistComponent } from './tools/checklist/checklist.component';
     ButtonsComponent,
     RoutingComponents,
     PageNotFoundComponent,
+    PreOrder_History_Pages
     ButtonQtComponent,
     ItemOrdersComponent,
     ChecklistComponent
-  
-   
+    SubcategoryComponent
   ],
 
   imports: [

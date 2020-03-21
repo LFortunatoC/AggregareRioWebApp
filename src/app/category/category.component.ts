@@ -11,8 +11,10 @@ export class CategoryComponent implements OnInit {
 
   title = 'AggregareRioWebApp';
   public name = 'Category';
+ 
   categories: any;
-  lang_id = 3 ;
+  lang_id= 2;
+  
   constructor(private service : CommunicationService) {
      this.getCategories(this.lang_id)
      
@@ -26,7 +28,7 @@ export class CategoryComponent implements OnInit {
    }
 
    selectItem() {
-   window.location.href="./item";
+   window.location.href="./subcategory";
    }
    
 
