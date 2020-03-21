@@ -12,7 +12,7 @@ export class ItemComponent implements OnInit {
 
   items: any;
   parameters = {
-      lang_id: 2,
+      lang_id: 1,
       subCategory_id : 3,
       menu_id: 3
     };
