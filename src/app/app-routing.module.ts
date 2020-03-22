@@ -12,11 +12,12 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {PreOrderComponent} from './pre-order/pre-order.component';
 
 const routes: Routes = [
-    { path:"", redirectTo: '/cover', pathMatch: 'full' },
+    { path:"", redirectTo: '/restaurant', pathMatch: 'full' },
+    { path: 'restaurant/:menu_id/:table_num', component: CoverComponent},
+    { path: 'cover', component: CoverComponent},
     { path: 'bill', component: BillComponent},
     { path: 'category', component: CategoryComponent},
     { path: 'subcategory', component: SubcategoryComponent},
-    { path: 'cover', component: CoverComponent},
     { path: 'full-picture', component: FullPictureComponent},
     { path: 'history', component: HistoryComponent},
     { path: 'item', component: ItemComponent},  

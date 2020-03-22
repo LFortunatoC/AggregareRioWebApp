@@ -7,8 +7,9 @@ export interface IData{
     order_id:number,
     tableNumber: number,
     OrderTotalValue: number,
-    OrderedItems
-}
+    OrderedItems,
+    total
+};
 
 export interface ItemOrdered {
     id: number,
@@ -19,6 +20,20 @@ export interface ItemOrdered {
     canceled: boolean,
     created_at: Date,
     updated_at: Date
-}
+};
 
-export type OrderedItems= [ItemOrdered]
+export interface IItem {
+    id: number,
+    category_id: number,
+    subCategory_id: number,
+    menu_id: number,
+    picturePath : string,
+    value: number,
+    active: boolean,
+    title: string,
+    description: string,
+    qty: number,
+};
+
+export type OrderedItems= [ItemOrdered];
+export type ItemList = [IItem];

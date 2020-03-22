@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {CommunicationService} from '../communication/communication.service';
+import {DataService} from '../data.service';
+import { IData } from '../dataparameters';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-order',
@@ -8,28 +11,26 @@ import {CommunicationService} from '../communication/communication.service';
 })
 export class OrderComponent implements OnInit {
   name = "Order";
+
   order: any;
-  order_id = 2;
+  parameters : IData;
   
 
   
-  constructor(private service : CommunicationService) {
-    this.getOrder(this.order_id)
-    
+  constructor(private service : CommunicationService, private data: DataService, private router: Router) {
+    this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
    }
 
 
-   getOrder (id){
-    this.service.getOrder (id)
+   getOrder (parameters){
+    this.service.getOrder (parameters)
     .subscribe(data => {
        this.order = data;
     }); 
    }
 
-  
-
-
   ngOnInit(): void {
+    this.getOrder(this.parameters)
   }
 
 }

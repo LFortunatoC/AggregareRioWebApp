@@ -10,21 +10,12 @@
    
   <table class="history-table">
     <tr><th><p>Name</p></th> <th><p>Delivered</p></th></tr>
-    <tr class="list-group-history" *ngFor = "let history of historys; index as i">
-        <td>{{history.title}}</td><td><app-checklist></app-checklist></td>
+    <tr class="list-group-history" *ngFor = "let historyitem of history.items; index as i">
+        <td>{{historyitem.title}}</td><td><app-checklist></app-checklist></td>
     </tr>
-    </table>
-
-      <!-- <ul class="list-group" *ngFor = "let history of historys; index as i" >
-          <li class="list-group-history">  {{history.title}}  Value = ${{history.value}}
-        <app-checklist></app-checklist></li>
-      </ul>    -->
+  </table>
 
 </div>
 <div class="footer"> 
     <app-footer-btts></app-footer-btts>
 </div>
-
-<h3>Name</h3>
-<h3>unit Price</h3>
-<h3>Qt</h3>

@@ -14,15 +14,15 @@ export class FullPictureComponent implements OnInit {
   fullPictures:any;
   
   constructor(private service: CommunicationService) { 
-    this.getFullPictures(this.menu_id)
+    // this.getFullPictures(this.menu_id)
   }
 
-  getFullPictures(item_id){
-    this.service.getFullPictures(item_id)
-    .subscribe(data=>{
-      this.fullPictures = data;
-    })
-  }
+  // getFullPictures(item_id){
+  //   this.service.getFullPictures(item_id)
+  //   .subscribe(data=>{
+  //     this.fullPictures = data;
+  //   })
+  // }
 
   ngOnInit(): void {
   }

@@ -31,6 +31,7 @@ export class SubcategoryComponent implements OnInit {
    }
 
   selectItem(subCategory_id: number) {
+    console.dir(subCategory_id);
     this.parameters.subCategory_id = subCategory_id;
     this.data.changeParameters(this.parameters);
     console.dir(this.parameters);
@@ -40,7 +41,6 @@ export class SubcategoryComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.dir(this.parameters);
     this.getSubCategories(this.parameters)
 
   }

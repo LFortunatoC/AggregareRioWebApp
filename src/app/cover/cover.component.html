@@ -6,9 +6,14 @@
 </div>
 <div class="body">
 
-<ul class="show-cover" >
-    <li class="show-cover-img"> {{covers.description}} <img src={{covers.picturePath}} >  </li>
-</ul>
+    <p> {{cover.title}}  </p>
+    <p> {{cover.description}}  </p>
+    <img src={{cover.picturePath}}  width=100%; >
+
+    <label> {{cover.altText1}}  </label>
+
+    <label> {{cover.altText2}}  </label>
+
 
 
 <button id="backBtt" (click)="startApp()" mat-stroked-button color="warm">Start app</button>

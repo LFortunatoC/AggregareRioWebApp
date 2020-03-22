@@ -11,16 +11,10 @@
 <h2>Items: </h2>
     <table class="pre-order-table">
         <tr><th><p>Name</p></th> <th><p>Price</p></th><th><p>Quantity</p></th></tr>
-        <tr *ngFor = "let preOrder of preOrders; index as i">
-            <td>{{preOrder.title}}</td> <td> Value = $ {{preOrder.value}}</td> <td><app-button-qt></app-button-qt> </td>
+        <tr *ngFor = "let preOrder of preOrders.items; index as i">
+            <td>{{preOrder.title}}</td> <td> ${{preOrder.currPrice}}</td> <td><app-button-qt></app-button-qt> </td>
         </tr>
-    </table>
-    
-    <!-- <ul class="list-group" *ngFor = "let preOrder of preOrders; index as i" >
-        <li class="list-group-preOrder">  {{preOrder.title}}  Value = $ {{preOrder.value}}
-        <app-button-qt></app-button-qt> </li>    
-    </ul>      -->
-      
+    </table>   
     
 </div>
 <div class="footer"> 

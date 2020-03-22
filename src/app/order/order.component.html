@@ -9,11 +9,10 @@
             <h3>Order Id = {{order.id}}     Table Number = {{order.tableNumber}}</h3>
             <h3>Items Ordered:</h3>
 
-                <p> itemOrdered.id - order.id- item.id - quantity - Price - Canceled - Created At - Updated At</p>
-            <table class="pre-order-table">
-                <tr><th><p>Name</p></th> <th><p>Price</p></th><th><p>Quantity</p></th></tr>
-                <tr *ngFor = "let preOrder of preOrders; index as i">
-                    <td>{{preOrder.title}}</td> <td> Value = $ {{preOrder.value}}</td> <td><app-button-qt></app-button-qt> </td>
+            <table class="order-table">
+                <tr><th><p>Name</p></th> <th><p>Price</p></th><th><p>Quantity</p></th><th><p>Total</p></th></tr>
+                <tr *ngFor = "let orderedItem of order.items; index as i">
+                    <td>{{orderedItem.title}}</td> <td> ${{orderedItem.currPrice}}</td> <td>{{orderedItem.qty}}</td>
                 </tr>
             </table>
     </div>
