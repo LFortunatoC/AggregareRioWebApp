@@ -9,7 +9,7 @@ import { Router, RouterModule, RouterLink, RouterOutlet } from '@angular/router'
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private location: Location) { }
+  constructor(private location: Location, private router: Router) { }
   
   ngOnInit(): void {
   }
@@ -18,12 +18,13 @@ export class NavbarComponent implements OnInit {
     if (!this.location.isCurrentPathEqualTo(window.location.href="/cover")) {
       this.location.back();
     } else {
-      window.location.href="./cover";
+      this.router.navigateByUrl('/cover');
     }
       }
 
   btMenu() {
-    window.location.href="./category";
+    // window.location.href="./category";
+    this.router.navigateByUrl('/category');
   }
 
   btLang() {

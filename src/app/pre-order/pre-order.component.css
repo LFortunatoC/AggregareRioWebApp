@@ -57,3 +57,12 @@ form {
       -webkit-appearance: none;
       margin: 0;
   }
+
+.pre-order-table {
+  text-align:left;
+}
+th, td {
+  padding-left: 1px;
+
+
+}

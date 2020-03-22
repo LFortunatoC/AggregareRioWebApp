@@ -1,6 +1,9 @@
 import { items } from './../order/order';
 import { Component, OnInit } from '@angular/core';
-import {CommunicationService} from './../communication.service';
+import {CommunicationService} from '../communication/communication.service';
+import {DataService} from '../data.service';
+import { IData } from '../dataparameters';
+import { Router} from '@angular/router'
 
 @Component({
   selector: 'app-category',
@@ -12,28 +15,31 @@ export class CategoryComponent implements OnInit {
   title = 'AggregareRioWebApp';
   public name = 'Category';
  
+  parameters : IData;
   categories: any;
-  lang_id= 2;
+
   
-  constructor(private service : CommunicationService) {
-     this.getCategories(this.lang_id)
-     
+  constructor(private service : CommunicationService, private data: DataService, private router: Router) {
+    
    }
 
-   getCategories (lang_id){
-    this.service.getCategories (lang_id)
+   getCategories (parameters){
+    this.service.getCategories (parameters)
     .subscribe(data => {
        this.categories = data;
     }); 
    }
 
-   selectItem() {
-   window.location.href="./subcategory";
+   selectItem(category_id: number) {
+    this.parameters.category_id = category_id;
+    this.data.changeParameters(this.parameters);
+    this.router.navigateByUrl('/subcategory');
    }
    
 
   ngOnInit(): void {
-    
+    this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
+    this.getCategories(this.parameters);
   }
 
 }

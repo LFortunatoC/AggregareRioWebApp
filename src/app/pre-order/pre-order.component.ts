@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CommunicationService } from '../communication.service';
-
+import { CommunicationService } from '../communication/communication.service';
+import {DataService} from '../data.service';
+import { IData } from '../dataparameters';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-pre-order',
@@ -32,35 +34,24 @@ export class PreOrderComponent implements OnInit {
   name = "Pre-Order";
 
   preOrders: any;
+  parameters : IData;
+  table: number;
 
-  //Parametros vindos do User
-  parameters = {
-      lang_id: 1,
-      subCategory_id : 3,
-      menu_id: 3
-    };
-
-  constructor(private service : CommunicationService) { 
-    this.getItems(this.parameters)
+  constructor(private service : CommunicationService, private data: DataService, private router: Router) { 
+    this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
   }
 
-  getItems (parameters){
-    this.service.getItems (parameters)
+  
+  getOrder (parameters){
+    this.service.getOrder (parameters)
     .subscribe(data => {
        this.preOrders = data;
     }); 
    }
 
   ngOnInit(): void {
+    this.table = this.parameters.tableNumber;
+    this.getOrder(this.parameters)
   }
-  
-//table="mesa retornada pelo QRcode"
- table = 15;
- showtable = false;
 
- onShowTable(){
-      this.showtable = true;
-      return this.table;
- }
- 
 }

@@ -5,25 +5,17 @@
     </div>
 </div>
 <div class="body">
-    <h1>history works!</h1>
 
-    <h3>Name</h3>
-    <h3>unit Price</h3>
-    <h3>Qt</h3>
-  
-  <h2>Table</h2>
-  {{table}}
-    
-      <ul class="list-group" *ngFor = "let history of historys; index as i" >
-          <li class="list-group-history">  {{history.title}} </li>
-          <li class="list-group-history">  {{history.value}} </li>
-         
-  <!-- <app-button-qt></app-button-qt> -->
-        <app-checklist></app-checklist>
-      </ul>   
+  <h2>Table {{table}}</h2>
+   
+  <table class="history-table">
+    <tr><th><p>Name</p></th> <th><p>Delivered</p></th></tr>
+    <tr class="list-group-history" *ngFor = "let historyitem of history.items; index as i">
+        <td>{{historyitem.title}}</td><td><app-checklist></app-checklist></td>
+    </tr>
+  </table>
 
 </div>
 <div class="footer"> 
     <app-footer-btts></app-footer-btts>
 </div>
-
