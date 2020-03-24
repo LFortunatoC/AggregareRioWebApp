@@ -6,7 +6,7 @@
 </div>
 <div class="body">
     <ul class="list-group" *ngFor = "let item of items; index as i" >
-        <li class="list-group-item" (click)="selectItem(item.id)" > <img src={{item.picturePath}}  width=48px; alt={{item.title}}> {{item.title}} </li>
+        <li class="list-group-item" (click)="selectItem(item)" > <img src={{item.picturePath}}  width=48px; alt={{item.title}}> {{item.title}} </li>
         <!-- <li class="list-group-item"> <img [lazyLoad]= item.picturePath width=48px; alt={{item.title}}> {{item.title}} </li> -->
 
     </ul>

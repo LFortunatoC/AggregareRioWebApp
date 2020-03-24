@@ -17,31 +17,18 @@ export class ItemDescriptionComponent implements OnInit {
   parameters : IData;
   selectedItem: IItem;
   itemsDesc: any;
-  
+
   constructor(private service : CommunicationService, private data: DataService, private router: Router) { 
   }
 
-
-  getItems (parameters){
-    this.service.getItems (parameters)
-    .subscribe(data => {
-       this.itemsDesc = data;
-    }); 
-   }
-
-
-   selectItem(id: number) {
-    console.dir(id);
-    this.selectedItem.id = id;
-    this.data.changeParameters(this.parameters);
-    console.dir(this.parameters);
+   selectItem(itemsDesc: any) {
       this.router.navigateByUrl('/full-picture'); 
    }
 
 
   ngOnInit(): void {
-    this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
-    this.getItems(this.parameters);
+    this.data.currentItem.subscribe(parameters => this.selectedItem = parameters);
+    console.dir(this.selectedItem);
   }
 
 
