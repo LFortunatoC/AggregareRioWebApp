@@ -1,9 +1,35 @@
-.order-table {
-    text-align:center;
-  }
-  th, td {
-    padding-left: 10px;
-    padding-right: 10px;
-  
-  
-  }
+.list-group-item {
+  margin-top: 1px;
+  vertical-align: middle;
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 10px 0 8px 10px;
+}
+
+#hd {
+  font-weight: bold;
+  background-color: #FFFFFF;
+}
+
+.index {
+  color: #930000;
+  background-color:#CECCC0
+}
+
+#order {
+  color: #930000;
+  font-size: 18px;
+  float: left;
+  padding: 5px 20px;
+}
+
+#table {
+  color: #930000;
+  font-size: 18px;
+  padding: 5px 20px;
+  text-align: right;
+
+}
+
+
+

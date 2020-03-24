@@ -10,4 +10,15 @@
     font-variant-caps: titling-caps;
 }
 
+.flex-column {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.img-fluid {
+    min-width: 80px;
+    max-width: 80px;
+}
+
+
     
