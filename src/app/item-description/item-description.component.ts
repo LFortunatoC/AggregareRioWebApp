@@ -16,7 +16,7 @@ export class ItemDescriptionComponent implements OnInit {
  
   parameters : IData;
   selectedItem: IItem;
-  items: any;
+  itemsDesc: any;
   
   constructor(private service : CommunicationService, private data: DataService, private router: Router) { 
   }
@@ -25,15 +25,17 @@ export class ItemDescriptionComponent implements OnInit {
   getItems (parameters){
     this.service.getItems (parameters)
     .subscribe(data => {
-       this.items = data;
+       this.itemsDesc = data;
     }); 
    }
 
 
-   selectItem(item: any) {
-     this.selectedItem = item;
-     this.data.changeItem(this.selectedItem);
-      this.router.navigateByUrl('/item-description'); 
+   selectItem(id: number) {
+    console.dir(id);
+    this.selectedItem.id = id;
+    this.data.changeParameters(this.parameters);
+    console.dir(this.parameters);
+      this.router.navigateByUrl('/full-picture'); 
    }
 
 
