@@ -1,3 +1,4 @@
+import { IData } from './../dataparameters';
 import { IPreOrder } from '../pre-order/pre-order';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams  } from '@angular/common/http';
@@ -7,17 +8,21 @@ import { ICover } from '../cover/cover';
 import {IItem} from '../item/item';
 import {IOrder} from '../order/order';
 import { Observable } from 'rxjs';
+import { ILanguage } from '../tools/lang-drop-list/lang-drop-list';
+
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CommunicationService {
+  
   private MenuUrl: string = 'http://127.0.0.1:8000/api/menu/';
   private CategoryUrl: string = 'http://127.0.0.1:8000/api/category/searchcategory/';
   private SubCategoryUrl: string = 'http://127.0.0.1:8000/api/subcategory/searchsubcategory/';
   private ItemsUrl: string  = 'http://127.0.0.1:8000/api/item/search/';
   private OrderUrl: string =  'http://127.0.0.1:8000/api/order/';
+  private LanguageUrl: string = 'http://127.0.0.1:8000/api/language/';
 
 
   constructor(private http: HttpClient) { }
@@ -62,6 +67,10 @@ export class CommunicationService {
       params: new HttpParams()
       .set('language_id', parameters.lang_id)
     } );
+  }
+
+  getLanguages(parameters: any) :Observable <ILanguage[]> {
+    return this.http.get<ILanguage[]>(this.LanguageUrl + parameters.lang_id);
   }
 
 }

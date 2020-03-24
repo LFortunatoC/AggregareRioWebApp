@@ -1,8 +1,15 @@
-<div class="dropdown show">
+<!-- <div class="dropdown show">
   <a class="mat-stroked-button dropdown-toggle"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages</a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="#">Action</a>
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
   </div>
+</div> -->
+
+<div> 
+  <select ng-model="selectLanguage">
+    <option selected="selected" value="0">Language</option>
+    <option *ngFor = "let lang of languages" value="lang.language_id">{{lang.language}}</option>
+  </select>
 </div>
