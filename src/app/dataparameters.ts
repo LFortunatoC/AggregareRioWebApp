@@ -35,5 +35,10 @@ export interface IItem {
     qty: number,
 };
 
+export interface IFull{
+    id:number,
+    picturePath : string,
+}
+
 export type OrderedItems= [ItemOrdered];
 export type ItemList = [IItem];

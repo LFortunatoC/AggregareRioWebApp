@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { IData, IItem, ItemList } from './dataparameters'
+import { IFull, IData, IItem, ItemList } from './dataparameters'
 
 @Injectable({
   providedIn: 'root'
@@ -34,6 +34,14 @@ export class DataService {
     qty: 0,
   }
 
+  initialFull: IFull = {
+    id: 6,
+    picturePath:"",    
+  }
+
+
+  private fullPic$ = new BehaviorSubject<IFull>(this.initialFull);
+  currentPic = this.fullPic$.asObservable();
 
   private parametersSource$ = new BehaviorSubject<IData>(this.initialParameters);
   currentParameters = this.parametersSource$.asObservable();
@@ -50,5 +58,11 @@ export class DataService {
   changeItem (item: IItem) {
     this.itemSource$.next(item)
   }
+
+  
+
+  // changeFull(full-picture: IFull){
+  //   this.fullPic$.next
+  // }
 
 }
