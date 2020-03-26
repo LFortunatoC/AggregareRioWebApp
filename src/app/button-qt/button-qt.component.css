@@ -1,7 +1,19 @@
 .value-button {
-    background-color: white;
-    border-width: 10px;
-    border-color: black;
-    padding: 5px;
-    margin: 5px;
-}
+    display: inline-block;
+    border: 1px solid #CECCC0;
+    width: 20px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+  }
+
+  .value-button:hover {
+    cursor: pointer;
+  }
+
+  .qtty-label {
+      margin: 5px;
+      
+  
+  }

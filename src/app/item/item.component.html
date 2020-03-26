@@ -6,9 +6,15 @@
 </div>
 <div class="body">
     <ul class="list-group" *ngFor = "let item of items; index as i" >
-        <li class="list-group-item" (click)="selectItem(item)" > <img src={{item.picturePath}}  width=48px; alt={{item.title}}> {{item.title}} </li>
+        <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectItem(item)"> 
+            <div class="image-parent">
+                <img class="img-fluid" src={{item.picturePath}}   alt={{item.title}}>
+            </div>
+            <div class="flex-column">
+                <p>{{item.title}}</p>
+            </div>
+        </li>
         <!-- <li class="list-group-item"> <img [lazyLoad]= item.picturePath width=48px; alt={{item.title}}> {{item.title}} </li> -->
-
     </ul>
 </div>
 <div class="footer"> 

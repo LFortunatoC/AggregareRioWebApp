@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule, RoutingComponents} from './app-routing.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
 import { FooterBttsComponent } from './tools/buttons/footer-btts/footer-btts.component';
 
 import { CommunicationService } from './communication/communication.service';
@@ -67,6 +68,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
+    MatListModule,
     HttpClientModule,
     LazyLoadImageModule
   ],
