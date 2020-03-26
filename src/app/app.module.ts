@@ -34,6 +34,7 @@ import { ItemOrdersComponent } from './item-orders/item-orders.component';
 import { ChecklistComponent } from './tools/checklist/checklist.component';
 import { SubcategoryComponent } from './subcategory/subcategory.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { ItemDescriptionComponent } from './item-description/item-description.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     ButtonQtComponent,
     ItemOrdersComponent,
     ChecklistComponent,
-    SubcategoryComponent
+    SubcategoryComponent,
+    ItemDescriptionComponent
   ],
 
   imports: [

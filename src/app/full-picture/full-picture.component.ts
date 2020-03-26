@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {CommunicationService} from '../communication/communication.service';
+import {DataService} from '../data.service';
+import { IData, IItem } from '../dataparameters';
+import { Router} from '@angular/router'
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @Component({
   selector: 'app-full-picture',
@@ -7,24 +11,18 @@ import {CommunicationService} from '../communication/communication.service';
   styleUrls: ['./full-picture.component.css']
 })
 export class FullPictureComponent implements OnInit {
-
-  item_id=3;
-  menu_id=3;
+  
   name="fullPicture";
   fullPictures:any;
   
-  constructor(private service: CommunicationService) { 
-    // this.getFullPictures(this.menu_id)
+  selectedItem: IItem;
+  constructor(private service : CommunicationService, private data: DataService, private router: Router) { 
+    this.data.currentItem.subscribe(parameters => this.selectedItem = parameters);
   }
 
-  // getFullPictures(item_id){
-  //   this.service.getFullPictures(item_id)
-  //   .subscribe(data=>{
-  //     this.fullPictures = data;
-  //   })
-  // }
-
+  
   ngOnInit(): void {
+
   }
 
 }

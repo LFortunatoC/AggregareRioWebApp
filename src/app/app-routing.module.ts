@@ -10,6 +10,7 @@ import {ItemComponent} from './item/item.component';
 import {OrderComponent} from './order/order.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {PreOrderComponent} from './pre-order/pre-order.component';
+import {ItemDescriptionComponent} from './item-description/item-description.component';
 
 const routes: Routes = [
     { path:"", redirectTo: '/restaurant', pathMatch: 'full' },
@@ -22,7 +23,8 @@ const routes: Routes = [
     { path: 'history', component: HistoryComponent},
     { path: 'item', component: ItemComponent},  
     { path: 'order', component: OrderComponent},
-    { path: 'pre-order', component: PreOrderComponent} ,
+    { path: 'pre-order', component: PreOrderComponent},
+    { path: 'item-description', component: ItemDescriptionComponent},
     { path: "**", component: PageNotFoundComponent}
 
 
@@ -44,6 +46,7 @@ export const RoutingComponents = [
                                     ItemComponent,
                                     OrderComponent, 
                                     PageNotFoundComponent,
-                                    PreOrderComponent
+                                    PreOrderComponent,
+                                    ItemDescriptionComponent
                                     //SubCategoryCompoment
                                 ]
