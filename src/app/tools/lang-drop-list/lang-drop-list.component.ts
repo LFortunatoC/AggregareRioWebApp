@@ -26,18 +26,15 @@ export class LangDropListComponent implements OnInit {
     }); 
    }
 
-  //  selectItem(language_id: number) {
-  //   console.dir(language_id);
-  //   this.parameters.lang_id= language_id;
-  //   this.data.changeParameters(this.parameters);
-  //   console.dir(this.parameters);
-    
-  //   }
+   selectLang(language_id: number) {
+    console.dir(language_id);
+    this.parameters.lang_id= language_id;
+    this.data.changeParameters(this.parameters);  
+     
+    }
    
   ngOnInit(): void {
-    console.dir(this.languages);
-
-  
+ 
   }
 
   
