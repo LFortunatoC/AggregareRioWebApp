@@ -2,16 +2,26 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .header {
+    position: fixed;
+    top: 0;
     height: 70px;
     background-color:#FFB35D;
+    width: 100%;
 }
 
 .body {
+    position: fixed;
+    width: 100%;
+    top:70px;
     height: 438px;
     background-color: #EEECE1;
+    overflow: scroll;
 }
 
 .footer {
+    position: fixed;
+    width: 100%;
+    top:509px;
     background-color: #000000;
     height: 60px;
 }
@@ -36,6 +46,16 @@
     color: #930000;
     display: block;
     font-size: medium;
-    
+}
+.title {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    color:#930000;
+    font-size: 22px;
 }
 
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

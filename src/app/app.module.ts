@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule, RoutingComponents} from './app-routing.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
 import { FooterBttsComponent } from './tools/buttons/footer-btts/footer-btts.component';
 
 import { CommunicationService } from './communication/communication.service';
@@ -33,6 +34,7 @@ import { ItemOrdersComponent } from './item-orders/item-orders.component';
 import { ChecklistComponent } from './tools/checklist/checklist.component';
 import { SubcategoryComponent } from './subcategory/subcategory.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { ItemDescriptionComponent } from './item-description/item-description.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     ButtonQtComponent,
     ItemOrdersComponent,
     ChecklistComponent,
-    SubcategoryComponent
+    SubcategoryComponent,
+    ItemDescriptionComponent
   ],
 
   imports: [
@@ -67,6 +70,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
+    MatListModule,
     HttpClientModule,
     LazyLoadImageModule
   ],

@@ -1,0 +1,21 @@
+<div class="header">
+    <app-navbar></app-navbar>
+    <div class="title">
+        <app-infobartitle #title [parentData]="name"></app-infobartitle>
+    </div>
+</div>
+<div class="body">
+        <div class="item-desc" (click)="selectItem(selectedItem)" > 
+        <img src={{selectedItem.picturePath}}  width=48px; alt={{selectedItem.title}}><br>{{selectedItem.title}}</div>
+        <div> 
+            {{selectedItem.description}}<br>
+            <label for="comments">comments:</label><br>
+            <input type="text" id="comments" name="comments"><br><br>
+            <app-button-qt></app-button-qt><br>
+            <input type="submit" value="Submit">
+        </div>
+</div>
+<div class="footer"> 
+    <app-footer-btts></app-footer-btts>
+</div>
+

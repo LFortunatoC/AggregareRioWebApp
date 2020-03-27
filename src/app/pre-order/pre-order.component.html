@@ -5,18 +5,27 @@
     </div>
 </div>
 <div class="body">
-
-
-<h2>Table: {{table}} </h2>
-<h2>Items: </h2>
-    <table class="pre-order-table">
-        <tr><th><p>Name</p></th> <th><p>Price</p></th><th><p>Quantity</p></th></tr>
-        <tr *ngFor = "let preOrder of preOrders.items; index as i">
-            <td>{{preOrder.title}}</td> <td> ${{preOrder.currPrice}}</td> <td><app-button-qt></app-button-qt> </td>
-        </tr>
-    </table>   
-    
+    <div class="index">
+        <!-- <div id="order">Ref# {{order.id}}</div> -->
+        <div id="table">Table {{table}}</div>
+    </div>
+        <ul id="hd" class="list-group">
+            <li class="list-group-item d-flex justify-content-start">
+                <div style="width: 55%;">Name</div>
+                <div style="width: 20%;">Price</div>
+                <div style="width: 25%;">Qty</div>
+                <!-- <th>Total</th> -->
+            </li>
+        </ul>
+        <ul class="list-group" *ngFor = "let preOrder of preOrders.items; index as i">
+            <li class="list-group-item d-flex justify-content-start align-items-center"> 
+                <div style="width: 55%;">{{preOrder.title}}</div>
+                <div style="width: 20%;">${{preOrder.currPrice}}</div>
+                <div style="width: 25%;"><app-button-qt></app-button-qt></div>
+            </li>
+        </ul>   
 </div>
+
 <div class="footer"> 
     <app-footer-btts></app-footer-btts>
 </div>

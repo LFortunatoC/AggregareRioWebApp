@@ -33,7 +33,7 @@ export class ItemComponent implements OnInit {
    selectItem(item: any) {
      this.selectedItem = item;
      this.data.changeItem(this.selectedItem);
-    //  this.router.navigateByUrl('/itemDescription/');  // Mauricio descomente esta linha para chamar seu componente....
+      this.router.navigateByUrl('/item-description'); 
    }
 
 
