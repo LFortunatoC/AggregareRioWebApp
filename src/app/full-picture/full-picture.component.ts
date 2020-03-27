@@ -4,6 +4,7 @@ import {DataService} from '../data.service';
 import { IData, IItem } from '../dataparameters';
 import { Router} from '@angular/router'
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-full-picture',
@@ -16,11 +17,13 @@ export class FullPictureComponent implements OnInit {
   fullPictures:any;
   
   selectedItem: IItem;
-  constructor(private service : CommunicationService, private data: DataService, private router: Router) { 
+  constructor(private service : CommunicationService, private data: DataService, private router: Router, private location: Location) { 
     this.data.currentItem.subscribe(parameters => this.selectedItem = parameters);
   }
 
-  
+  returnToItem() {
+    this.location.back();
+  }
   ngOnInit(): void {
 
   }

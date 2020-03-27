@@ -10,6 +10,6 @@
 <div> 
   <select ng-model="selectLanguage">
     <option selected="selected" value="0">Language</option>
-    <option *ngFor = "let lang of languages" value="lang.language_id">{{lang.language}}</option>
+    <option *ngFor = "let lang of languages.data" value="lang.language_id">  <img src={{lang.flagPath}}  width=48px;> {{lang.language}}</option>
   </select>
 </div>
