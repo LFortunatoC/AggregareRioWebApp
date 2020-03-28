@@ -34,7 +34,7 @@ export class LangDropListComponent implements OnInit {
    
   ngOnInit(): void {
 
-    this.getLanguages(this.parameters)
+   // this.getLanguages(this.parameters)
   }
 
   

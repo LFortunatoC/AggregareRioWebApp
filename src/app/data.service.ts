@@ -8,7 +8,7 @@ import { IData, IItem, ItemList } from './dataparameters'
 export class DataService {
 
   initialParameters: IData = {
-    lang_id: 1,
+    lang_id: 3,
     category_id: 2,
     subCategory_id: 0,
     menu_id : 3,
