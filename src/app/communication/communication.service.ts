@@ -70,7 +70,7 @@ export class CommunicationService {
   }
 
   getLanguages(parameters: any) :Observable <ILanguage[]> {
-    return this.http.get<ILanguage[]>(this.LanguageUrl + parameters.lang_id);
+    return this.http.get<ILanguage[]>(this.LanguageUrl);
   }
 
 }

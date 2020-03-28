@@ -14,7 +14,9 @@ export class LangDropListComponent implements OnInit {
   parameters : IData;
   languages: any;
   
-  constructor(private service : CommunicationService, private data: DataService, private router: Router) { }
+  constructor(private service : CommunicationService, private data: DataService, private router: Router) {
+    this.getLanguages(this.parameters)
+   }
 
 
   getLanguages (parameters){
@@ -24,13 +26,12 @@ export class LangDropListComponent implements OnInit {
     }); 
    }
 
-  //  selectItem(language_id: number) {
-  //   console.dir(language_id);
-  //   this.parameters.lang_id= language_id;
-  //   this.data.changeParameters(this.parameters);
-  //   console.dir(this.parameters);
-    
-  //   }
+   selectLang(language_id: number) {
+    console.dir(language_id);
+    this.parameters.lang_id= language_id;
+    this.data.changeParameters(this.parameters);  
+     
+    }
    
   ngOnInit(): void {
 
