@@ -11,6 +11,8 @@ import {OrderComponent} from './order/order.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {PreOrderComponent} from './pre-order/pre-order.component';
 import {ItemDescriptionComponent} from './item-description/item-description.component';
+import {LanguageComponent} from './language/language.component';
+
 
 const routes: Routes = [
     { path:"", redirectTo: '/restaurant', pathMatch: 'full' },
@@ -25,6 +27,7 @@ const routes: Routes = [
     { path: 'order', component: OrderComponent},
     { path: 'pre-order', component: PreOrderComponent},
     { path: 'item-description', component: ItemDescriptionComponent},
+    { path: 'language', component: LanguageComponent},
     { path: "**", component: PageNotFoundComponent}
 
 

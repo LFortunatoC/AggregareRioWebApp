@@ -19,7 +19,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './tools/navbar/navbar.component';
 import { InfobartitleComponent } from './tools/infobartitle/infobartitle.component';
 import { CategoryComponent } from './category/category.component';
-import { LangDropListComponent } from './tools/lang-drop-list/lang-drop-list.component';
 import { BillComponent } from './bill/bill.component';
 import { CoverComponent } from './cover/cover.component';
 import { FullPictureComponent } from './full-picture/full-picture.component';
@@ -35,6 +34,7 @@ import { ChecklistComponent } from './tools/checklist/checklist.component';
 import { SubcategoryComponent } from './subcategory/subcategory.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { ItemDescriptionComponent } from './item-description/item-description.component';
+import { LanguageComponent } from './language/language.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,6 @@ import { ItemDescriptionComponent } from './item-description/item-description.co
     NavbarComponent,
     InfobartitleComponent,
     CategoryComponent,
-    LangDropListComponent,
     BillComponent,
     CoverComponent,
     FullPictureComponent,
@@ -54,12 +53,12 @@ import { ItemDescriptionComponent } from './item-description/item-description.co
     ButtonsComponent,
     RoutingComponents,
     PageNotFoundComponent,
-    //PreOrder_History_Pages,
     ButtonQtComponent,
     ItemOrdersComponent,
     ChecklistComponent,
     SubcategoryComponent,
-    ItemDescriptionComponent
+    ItemDescriptionComponent,
+    LanguageComponent
   ],
 
   imports: [

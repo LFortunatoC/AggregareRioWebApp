@@ -1,0 +1,18 @@
+.list-group-item {
+    margin-top: 1px;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 8px 0 8px 15px;
+
+}
+
+.flex-column {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.img-fluid {
+    min-width: 80px;
+    max-width: 80px;
+}
