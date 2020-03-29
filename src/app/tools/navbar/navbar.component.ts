@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
   }
 
   btLang() {
-    ;
+    this.router.navigateByUrl('/language');
   }
 
   

@@ -3,6 +3,7 @@ import {CommunicationService} from '../communication/communication.service';
 import { Router, ActivatedRoute} from '@angular/router';
 import {DataService} from '../data.service';
 import { IData } from '../dataparameters';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-cover',
@@ -12,25 +13,23 @@ import { IData } from '../dataparameters';
 export class CoverComponent implements OnInit {
 
 
-  name='';
+  public name='Welcome!';
   sub : any;
   cover: any;
   parameters : IData;
 
-
-  constructor(private service : CommunicationService, private data: DataService, private router: Router, private route: ActivatedRoute) {
-    this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
-   }
-
-   getCover (parameters){
+  getCover (parameters){
     this.service.getMenubyId (parameters)
     .subscribe(data => {
        this.cover = data;
+       this.name = this.cover.title;
     }); 
    }
 
-   getMenubyId
-
+  constructor(private service : CommunicationService, private data: DataService, private router: Router, private route: ActivatedRoute) {
+    this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
+  }
+   
   startApp() {
     this.router.navigateByUrl('/category');
   }
@@ -41,9 +40,7 @@ export class CoverComponent implements OnInit {
     this.parameters.tableNumber = params['table_num']||this.parameters.tableNumber ;
     this.data.changeParameters(this.parameters);
     this.getCover(this.parameters);
-
-    });
-
-  }
+  });
+}
 
 }

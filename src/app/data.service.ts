@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { IData, IItem, ItemList } from './dataparameters'
+import { IData, IItem, ItemList, IPreOrder } from './dataparameters'
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ import { IData, IItem, ItemList } from './dataparameters'
 export class DataService {
 
   initialParameters: IData = {
-    lang_id: 1,
+    lang_id: 3,
     category_id: 2,
     subCategory_id: 0,
     menu_id : 3,
@@ -34,12 +34,20 @@ export class DataService {
     qty: 0,
   }
 
+  initialPreOrder: IPreOrder = {
+    tableNumber: 0,
+    deliveredAt: new Date(),
+    itemList: null
+  }
 
   private parametersSource$ = new BehaviorSubject<IData>(this.initialParameters);
   currentParameters = this.parametersSource$.asObservable();
 
   private itemSource$ = new BehaviorSubject<IItem>(this.initialItem);
   currentItem = this.itemSource$.asObservable();
+
+  private preOrderSource$ = new BehaviorSubject<IPreOrder>(this.initialPreOrder);
+  currentPreOrder = this.preOrderSource$.asObservable();
 
   constructor() { }
 
@@ -49,6 +57,10 @@ export class DataService {
 
   changeItem (item: IItem) {
     this.itemSource$.next(item)
+  }
+
+  changePreOrder (preorder: IPreOrder) {
+    this.preOrderSource$.next(preorder)
   }
 
 }

@@ -22,6 +22,8 @@ export interface ItemOrdered {
     updated_at: Date
 };
 
+
+
 export interface IItem {
     id: number,
     category_id: number,
@@ -34,6 +36,20 @@ export interface IItem {
     description: string,
     qty: number,
 };
+
+export interface IPreOrder {
+    tableNumber: number,
+    deliveredAt: Date,
+    itemList: Array <IPreOrderItem>
+}
+
+export interface IPreOrderItem {
+    item_id: number,
+    qty: number,
+    currPrice: number
+}
+
+
 
 export type OrderedItems= [ItemOrdered];
 export type ItemList = [IItem];

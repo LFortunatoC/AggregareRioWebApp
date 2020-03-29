@@ -8,8 +8,7 @@ import { ICover } from '../cover/cover';
 import {IItem} from '../item/item';
 import {IOrder} from '../order/order';
 import { Observable } from 'rxjs';
-import { ILanguage } from '../tools/lang-drop-list/lang-drop-list';
-
+import {ILanguage}from '../language/language'
 
 
 @Injectable({
@@ -21,6 +20,7 @@ export class CommunicationService {
   private CategoryUrl: string = 'http://127.0.0.1:8000/api/category/searchcategory/';
   private SubCategoryUrl: string = 'http://127.0.0.1:8000/api/subcategory/searchsubcategory/';
   private ItemsUrl: string  = 'http://127.0.0.1:8000/api/item/search/';
+  private ItemByIdUrl: string  = 'http://127.0.0.1:8000/api/item/';
   private OrderUrl: string =  'http://127.0.0.1:8000/api/order/';
   private LanguageUrl: string = 'http://127.0.0.1:8000/api/language/';
 
@@ -61,6 +61,14 @@ export class CommunicationService {
           .set('language_id', parameters.lang_id)
     });
   }
+
+  getItembyId (parameters:any):  Observable <IItem[]> {
+    return this.http.get<IItem[]>(this.ItemByIdUrl + parameters.id, {
+      params: new HttpParams()
+          .set('language_id', parameters.lang_id)
+    });
+  }
+
 
   getOrder (parameters:any) :Observable <IOrder[]> {
     return this.http.get<IOrder[]>(this.OrderUrl + parameters.order_id,{
