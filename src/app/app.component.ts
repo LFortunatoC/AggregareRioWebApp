@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 
 @Component({
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['English', 'Français', 'Portugues']);
+    translate.setDefaultLang('English');
+}
 }

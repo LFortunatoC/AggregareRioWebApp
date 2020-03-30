@@ -1,10 +1,11 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData]="name"></app-infobartitle>
-    </div>
+        <app-infobartitle #title [parentData] translate="lTitle"></app-infobartitle>
+   </div>
 </div>
   <div class="body">
+    <app-select-language></app-select-language>
     <ul class="list-group" *ngFor = "let lang of languages.data; index as i" >
         <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectLang(lang.id)"> 
             <div class="image-parent">

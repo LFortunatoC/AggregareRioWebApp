@@ -10,7 +10,7 @@ import { Router} from '@angular/router';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-  name = "Order";
+  // name = "Order";
 
   order: any;
   parameters : IData;

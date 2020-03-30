@@ -1,0 +1,10 @@
+<span>
+    <select #langSelect (change)="translate.use(langSelect.value)">
+        <option
+          *ngFor="let lang of translate.getLangs()"
+          [value]="lang"
+          [attr.selected]="lang === translate.currentLang ? '' : null"
+        >{{lang}}</option>
+      </select>
+</span>
+

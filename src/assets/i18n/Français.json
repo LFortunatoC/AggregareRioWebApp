@@ -1,0 +1,23 @@
+
+{
+
+    "text": "Menu Principal",
+    "language": "Langue",
+    "cTitle": "Catégorie",
+    "scTitle": "Sous Catégorie",
+    "iTitle": "Item",
+    "idTitle": "Description de l'item",
+    "oTitle": "Commande",
+    "poTitle": "Pré-commander",
+    "bTitle":"Addition",
+    "hTitle": "Historique",
+    "lTitle": "Langue",
+    "call": "Serveur",
+    "oTable": "Table",
+    "oPrice": "Prix",
+    "oQty": "Qté",
+    "oTotal": "Total"
+   
+}
+
+       

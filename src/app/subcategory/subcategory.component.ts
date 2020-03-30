@@ -12,7 +12,7 @@ import { Router} from '@angular/router';
 })
 export class SubcategoryComponent implements OnInit {
 
-  name = "Sub Categories";
+  // name = "Sub Categories";
 
   subCategories: any;
 

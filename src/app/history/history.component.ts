@@ -34,7 +34,7 @@ export class HistoryComponent implements OnInit {
 //Do 6  Buttons  Bill - To do
 //**Enviar os dados para as Tabelas Order e ItemOrder */
 
-  name="History";
+  // name="History";
   history: any;
   parameters : IData;
   table: number;

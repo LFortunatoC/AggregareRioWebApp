@@ -1,0 +1,21 @@
+{
+
+    "text": "Menu Principal",
+    "language": "Idioma",
+    "cTitle": "Categoria",
+    "scTitle": "Sub Categoria",
+    "iTitle": "Item",
+    "idTitle": "Descrição do Item",
+    "oTitle": "Pedido",
+    "poTitle": "Comanda",
+    "bTitle":"Conta",
+    "hTitle": "Histórico",
+    "lTitle": "Idioma",
+    "call": "Garçon",
+    "oTable": "Mesa",
+    "oPrice": "Preço",
+    "oQty": "Qtd",
+    "oTotal": "Total"
+   
+   
+}
