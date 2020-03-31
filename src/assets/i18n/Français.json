@@ -1,6 +1,6 @@
 
 {
-
+    "aTitle": "Commencer App",
     "text": "Menu Principal",
     "language": "Langue",
     "cTitle": "Catégorie",
@@ -13,6 +13,7 @@
     "hTitle": "Historique",
     "lTitle": "Langue",
     "call": "Serveur",
+    "name": "Nom",
     "oTable": "Table",
     "oPrice": "Prix",
     "oQty": "Qté",

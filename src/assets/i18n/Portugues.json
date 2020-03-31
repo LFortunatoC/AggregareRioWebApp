@@ -1,5 +1,5 @@
 {
-
+    "aTitle": "Iniciar App",
     "text": "Menu Principal",
     "language": "Idioma",
     "cTitle": "Categoria",
@@ -12,6 +12,7 @@
     "hTitle": "Histórico",
     "lTitle": "Idioma",
     "call": "Garçon",
+    "name": "Nome",
     "oTable": "Mesa",
     "oPrice": "Preço",
     "oQty": "Qtd",

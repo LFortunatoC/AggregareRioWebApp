@@ -1,4 +1,5 @@
 {
+    "aTitle": "Start App",
     "text": "Main Menu",
     "language": "Language",
     "cTitle": "Category",
@@ -11,6 +12,7 @@
     "hTitle": "History",
     "lTitle": "Language",
     "call": "Waiter",
+    "name": "Name",
     "oTable": "Table",
     "oPrice": "Price",
     "oQty": "Qty",

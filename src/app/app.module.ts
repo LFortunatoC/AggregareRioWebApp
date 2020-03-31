@@ -38,7 +38,7 @@ import { LanguageComponent } from './language/language.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient } from '@angular/common/http';
-import {SelectLanguageComponent} from './select-language/select-language.component';
+
 
 
 
@@ -66,7 +66,7 @@ import {SelectLanguageComponent} from './select-language/select-language.compone
     SubcategoryComponent,
     ItemDescriptionComponent,
     LanguageComponent,
-    SelectLanguageComponent
+    
     
   ],
 
