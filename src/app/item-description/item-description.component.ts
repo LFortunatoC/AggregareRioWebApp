@@ -12,7 +12,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 })
 export class ItemDescriptionComponent implements OnInit {
 
-  public name = 'Item Description';
+  // public name = 'Item Description';
  
   parameters : IData;
   selectedItem: any;

@@ -1,7 +1,7 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData]="name"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="poTitle"></app-infobartitle>
     </div>
 </div>
 <div class="body">
@@ -11,9 +11,9 @@
     </div>
         <ul id="hd" class="list-group">
             <li class="list-group-item d-flex justify-content-start">
-                <div style="width: 55%;">Name</div>
-                <div style="width: 20%;">Price</div>
-                <div style="width: 25%;">Qty</div>
+                <div style="width: 55%;" translate="name"></div>
+                <div style="width: 20%;" translate="oPrice"></div>
+                <div style="width: 25%;" translate="oQty"></div>
                 <!-- <th>Total</th> -->
             </li>
         </ul>

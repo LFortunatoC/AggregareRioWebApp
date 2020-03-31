@@ -13,7 +13,7 @@ import { Router} from '@angular/router'
 export class CategoryComponent implements OnInit {
 
   title = 'AggregareRioWebApp';
-  public name = 'Category';
+  // public name = 'Category';
  
   parameters : IData;
   categories: any;

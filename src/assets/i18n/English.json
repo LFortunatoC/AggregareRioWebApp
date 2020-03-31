@@ -1,0 +1,22 @@
+{
+    "aTitle": "Start App",
+    "text": "Main Menu",
+    "language": "Language",
+    "cTitle": "Category",
+    "scTitle": "Sub Category",
+    "iTitle": "Item",
+    "idTitle": "Item Description",
+    "oTitle": "Order",
+    "poTitle": "Pre Order",
+    "bTitle":"Bill",
+    "hTitle": "History",
+    "lTitle": "Language",
+    "call": "Waiter",
+    "name": "Name",
+    "oTable": "Table",
+    "oPrice": "Price",
+    "oQty": "Qty",
+    "oTotal": "Total"
+    
+
+}

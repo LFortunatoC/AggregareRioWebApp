@@ -35,6 +35,13 @@ import { SubcategoryComponent } from './subcategory/subcategory.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { ItemDescriptionComponent } from './item-description/item-description.component';
 import { LanguageComponent } from './language/language.component';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient } from '@angular/common/http';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -58,7 +65,9 @@ import { LanguageComponent } from './language/language.component';
     ChecklistComponent,
     SubcategoryComponent,
     ItemDescriptionComponent,
-    LanguageComponent
+    LanguageComponent,
+    
+    
   ],
 
   imports: [
@@ -71,7 +80,16 @@ import { LanguageComponent } from './language/language.component';
     MatToolbarModule,
     MatListModule,
     HttpClientModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
+
   ],
   providers: [CommunicationService,
               RequestCacheService,
@@ -81,3 +99,7 @@ import { LanguageComponent } from './language/language.component';
   bootstrap: [AppComponent, RoutingComponents]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

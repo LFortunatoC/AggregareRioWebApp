@@ -31,7 +31,7 @@ export class PreOrderComponent implements OnInit {
 //Do 6  Buttons Order and Bill - To do
 //**Enviar os dados para as Tabelas Order e ItemOrder */
 
-  name = "Pre-Order";
+  // name = "Pre-Order";
 
   preOrders: any;
   parameters : IData;

@@ -1,20 +1,31 @@
 <div class="header">
-    <app-navbar></app-navbar>
+    <app-navbar></app-navbar> 
+    
     <div class="title">
-        <app-infobartitle #title [parentData]="name"></app-infobartitle>
-    </div>
+        <app-infobartitle #title [parentData] translate="lTitle"></app-infobartitle>
+   </div>
 </div>
   <div class="body">
-    <ul class="list-group" *ngFor = "let lang of languages.data; index as i" >
-        <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectLang(lang.id)"> 
-            <div class="image-parent">
-                <img class="img-fluid" src={{lang.flagPath}}   alt={{lang.language}}>
-            </div>
-            <div class="flex-column">
-                <p>{{lang.language}}</p>
-            </div>
-        </li>
-    </ul>
+    <div>
+        <select #langSelect (change)="translate.use(langSelect.value)">
+            <option
+              *ngFor="let lang of translate.getLangs()"
+              [value]="lang"
+              [attr.selected.true]="lang" 
+            >{{lang}}</option>
+          </select>
+      </div>
+        <ul class="list-group" *ngFor = "let lang of languages.data; index as i" >
+            <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectLang(lang.id)"> 
+                <div class="image-parent">
+                    <img class="img-fluid" src={{lang.flagPath}}   alt={{lang.language}} >
+                </div>
+                <div class="flex-column">
+                    <p>{{lang.language}}</p>
+                </div>
+                
+            </li>
+        </ul>
 </div>
 
 <div class="footer"> 

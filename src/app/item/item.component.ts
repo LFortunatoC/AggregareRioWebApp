@@ -12,7 +12,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 })
 export class ItemComponent implements OnInit {
 
-  name = "Items"; //should be changed for a name retrived from table
+  // name = "Items"; //should be changed for a name retrived from table
   
   parameters : IData;
   selectedItem: IItem;
