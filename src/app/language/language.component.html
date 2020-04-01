@@ -6,24 +6,14 @@
    </div>
 </div>
   <div class="body">
-    <div>
-        <select #langSelect (change)="translate.use(langSelect.value)">
-            <option
-              *ngFor="let lang of translate.getLangs()"
-              [value]="lang"
-              [attr.selected.true]="lang" 
-            >{{lang}}</option>
-          </select>
-      </div>
         <ul class="list-group" *ngFor = "let lang of languages.data; index as i" >
-            <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectLang(lang.id)"> 
+            <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectLang(lang)"> 
                 <div class="image-parent">
                     <img class="img-fluid" src={{lang.flagPath}}   alt={{lang.language}} >
                 </div>
                 <div class="flex-column">
                     <p>{{lang.language}}</p>
-                </div>
-                
+                </div>               
             </li>
         </ul>
 </div>

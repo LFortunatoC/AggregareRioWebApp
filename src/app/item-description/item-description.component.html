@@ -12,8 +12,8 @@
             <label for="comments">Comments:</label><br>
             <input type="text" id="comments" name="comments"><br><br>
             <label for="comments">Price Per Unit:&nbsp;&nbsp;</label>{{selectedItem.value}}<br>
-            <app-button-qt></app-button-qt><br>
-            <input type="submit" value="Submit">
+            <app-button-qt [quantity]="item_qty" (newquantity)="updateQtty($event)"></app-button-qt><br>
+            <input type="submit" value="Submit" (click)="addToOrder()">
         </div>
 </div>
 <div class="footer"> 

@@ -1,0 +1,22 @@
+{
+    "aTitle": "Iniciar aplicación",
+    "text": "Menú principal",
+    "language": "Idioma",
+    "cTitle": "Categoría",
+    "scTitle": "Subcategoría",
+    "iTitle": "Item",
+    "idTitle": "Descripción del Item",
+    "oTitle": "Pedido",
+    "poTitle": "Pre Ordenes",
+    "bTitle":"Cuenta",
+    "hTitle": "Histórico",
+    "lTitle": "Idioma",
+    "call": "Mesero",
+    "name": "Name",
+    "oTable": "Mesa",
+    "oPrice": "Precio",
+    "oQty": "Cantidad",
+    "oTotal": "Total"
+    
+
+}
