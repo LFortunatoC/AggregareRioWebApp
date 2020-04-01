@@ -19,7 +19,7 @@ export class ItemDescriptionComponent implements OnInit {
   preOrder: IPreOrder;
   itemsDesc: any;
   selectLang = 0;
-  
+  item_qty: number; 
 
   constructor(private service : CommunicationService, private data: DataService, private router: Router) { 
     this.data.currentItem.subscribe(parameters => this.selectedItem = parameters);
@@ -36,22 +36,21 @@ export class ItemDescriptionComponent implements OnInit {
       this.router.navigateByUrl('/full-picture'); 
    }
 
-  // Joao... eh aqui que a magica deve acontecer descomente e codifique!!!! 
-  // toda vez que o botao add to order ou o submit for clicado esta funcao deve ser chamada. 
-  // Ela deve verificar se qty > 0 adiciona
-  // Se qty == 0 nao faz nada.
 
-  //  addToOrder() {
-  //   let item : IPreOrderItem;
-  //   item.item_id = 
-  //   item.qty = 
-  //   item.currPrice = 
-  //   this.preOrder.itemList.push(item);
-  //   this.data.changePreOrder(this.preOrder);
-  //  }
+   addToOrder() {
+    let item : IPreOrderItem = {item_id: 0, qty: 0, currPrice: 0 };
+
+    item.item_id = this.selectedItem.id;
+    item.qty = this.item_qty;
+    item.currPrice = this.selectedItem.value; 
+    
+    this.preOrder.itemList.push(item);
+    console.dir( this.preOrder.itemList);
+    this.data.changePreOrder(this.preOrder);
+   }
   
    ngOnInit(): void {
-
+    this.item_qty = 0;
   }
 
   getItemById (parameters){
@@ -72,9 +71,12 @@ export class ItemDescriptionComponent implements OnInit {
         id: this.selectedItem.id
       };
       this.getItemById(itemParameters);
-      console.dir( this.selectedItem);
       this.selectLang = this.parameters.lang_id;
     }
+  }
+
+  updateQtty($event) {
+    this.item_qty=$event;
   }
 
 }

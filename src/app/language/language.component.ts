@@ -15,14 +15,10 @@ import { TranslateService } from '@ngx-translate/core';
 export class LanguageComponent implements OnInit {
   parameters : IData;
   languages: any;  
-  // public name = 'Language';
 
   constructor(private service : CommunicationService, private data: DataService, private router: Router, private location: Location, public translate: TranslateService) {
     this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
-    this.getLanguages(this.parameters)
-    translate.addLangs(['English', 'Français', 'Portugues']);
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/English|Français|Portugues/) ? browserLang : '');
+    this.getLanguages(this.parameters);
    }
 
    
@@ -34,10 +30,11 @@ export class LanguageComponent implements OnInit {
     }); 
    }
 
-   selectLang(language_id: number) {
-    console.dir(language_id);
-    this.parameters.lang_id= language_id;
+   selectLang(lang: any) {
+    this.parameters.lang_id= lang.id;
     this.data.changeParameters(this.parameters);  
+    this.translate.use(lang.language)
+    
     this.location.back();
      
     }

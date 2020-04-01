@@ -37,7 +37,7 @@ export class DataService {
   initialPreOrder: IPreOrder = {
     tableNumber: 0,
     deliveredAt: new Date(),
-    itemList: null
+    itemList: new Array()
   }
 
   private parametersSource$ = new BehaviorSubject<IData>(this.initialParameters);
