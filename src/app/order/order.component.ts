@@ -1,3 +1,4 @@
+import { IPreOrder } from './../dataparameters';
 import { Component, OnInit } from '@angular/core';
 import {CommunicationService} from '../communication/communication.service';
 import {DataService} from '../data.service';
@@ -14,11 +15,13 @@ export class OrderComponent implements OnInit {
 
   order: any;
   parameters : IData;
+ // preOrder: IPreOrder;
   
 
   
   constructor(private service : CommunicationService, private data: DataService, private router: Router) {
     this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
+    //this.data.currentPreOrder.subscribe(parameters => this.preOrder = parameters);
    }
 
 
