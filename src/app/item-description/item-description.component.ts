@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {CommunicationService} from '../communication/communication.service';
 import {DataService} from '../data.service';
 import { IData, IPreOrder,IPreOrderItem } from '../dataparameters';
@@ -12,15 +13,19 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 })
 export class ItemDescriptionComponent implements OnInit {
 
-  // public name = 'Item Description';
+ 
+  @Output() newpreOrder = new EventEmitter<IPreOrder>();
+  onSubmit() {
+    this.newpreOrder.emit(this.preOrder);
+  }
  
   parameters : IData;
   selectedItem: any;
-  preOrder: IPreOrder;
+  @Input('preOrder') preOrder: IPreOrder;
   itemsDesc: any;
   selectLang = 0;
   item_qty: number; 
-
+  index:any;
   constructor(private service : CommunicationService, private data: DataService, private router: Router) { 
     this.data.currentItem.subscribe(parameters => this.selectedItem = parameters);
     this.data.currentPreOrder.subscribe(parameters => this.preOrder = parameters);
@@ -39,15 +44,36 @@ export class ItemDescriptionComponent implements OnInit {
 
    addToOrder() {
     let item : IPreOrderItem = {item_id: 0, qty: 0, currPrice: 0 };
-
+    this.index = this.getItemListIndex(this.selectedItem.id);
+     
+ if(this.item_qty==0){
+   if(this.index>=0){
+  this.preOrder.itemList[this.index].qty = this.item_qty;
+}
+//this.item_qty= 0 ->colocar uma mensagem escolha a quantidade desejada
+else{}
+ }
+ else{
+ 
+ if(this.index>=0){
+    this.preOrder.itemList[this.index].qty = this.item_qty;
+}
+else{
     item.item_id = this.selectedItem.id;
     item.qty = this.item_qty;
-    item.currPrice = this.selectedItem.value; 
-    
+    item.currPrice = this.selectedItem.value;   
     this.preOrder.itemList.push(item);
-    console.dir( this.preOrder.itemList);
+     }
+  
     this.data.changePreOrder(this.preOrder);
-   }
+  }
+    console.dir( this.preOrder.itemList); 
+  }
+
+
+   getItemListIndex(id){
+    return this.preOrder.itemList.findIndex(x=>x.item_id===id)   
+  }
   
    ngOnInit(): void {
     this.item_qty = 0;
