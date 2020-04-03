@@ -14,6 +14,10 @@
             <label for="comments">Price Per Unit:&nbsp;&nbsp;</label>{{selectedItem.value}}<br>
             <app-button-qt [quantity]="item_qty" (newquantity)="updateQtty($event)"></app-button-qt><br>
             <input type="submit" value="Submit" (click)="addToOrder()">
+
+             <!-- Provisorio enquanto nao tem buttao Order -->
+            <input type="submit" value="go to preOrder" (click)="goToPre()">
+
         </div>
 </div>
 <div class="footer"> 
