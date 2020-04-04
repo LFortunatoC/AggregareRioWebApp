@@ -81,4 +81,10 @@ export class CommunicationService {
     return this.http.get<ILanguage[]>(this.LanguageUrl);
   }
 
+  postOrder (parameters:any) :Observable <any> {
+    return this.http.post<IOrder[]>(this.OrderUrl,{
+      params: new HttpParams()
+      .set('',parameters)
+    } );
+  }
 }

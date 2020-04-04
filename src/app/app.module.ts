@@ -16,6 +16,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {CominterceptorInterceptor} from './communication/cominterceptor.interceptor';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDialogModule} from '@angular/material/dialog';
 import { NavbarComponent } from './tools/navbar/navbar.component';
 import { InfobartitleComponent } from './tools/infobartitle/infobartitle.component';
 import { CategoryComponent } from './category/category.component';
@@ -38,6 +39,7 @@ import { LanguageComponent } from './language/language.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient } from '@angular/common/http';
+import { ConfirmationDialogComponent } from './components/shared/confirmation-dialog/confirmation-dialog.component';
 
 
 
@@ -66,6 +68,7 @@ import {HttpClient } from '@angular/common/http';
     SubcategoryComponent,
     ItemDescriptionComponent,
     LanguageComponent,
+    ConfirmationDialogComponent,
     
     
   ],
@@ -79,6 +82,7 @@ import {HttpClient } from '@angular/common/http';
     MatIconModule,
     MatToolbarModule,
     MatListModule,
+    MatDialogModule,
     HttpClientModule,
     LazyLoadImageModule,
     HttpClientModule,

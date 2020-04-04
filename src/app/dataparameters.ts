@@ -45,6 +45,7 @@ export interface IPreOrder {
 
 export interface IPreOrderItem {
     item_id: number,
+    title: String,
     qty: number,
     currPrice: number
 }
