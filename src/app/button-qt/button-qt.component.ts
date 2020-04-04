@@ -8,6 +8,8 @@ import { IPreOrder } from '../dataparameters';
 })
 export class ButtonQtComponent implements OnInit {
 
+// these are the methods exclusive to the Quantity component.
+
   @Input() quantity: number;
   @Output() newquantity = new EventEmitter<number>();
     

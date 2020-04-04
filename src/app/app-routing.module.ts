@@ -13,7 +13,7 @@ import {PreOrderComponent} from './pre-order/pre-order.component';
 import {ItemDescriptionComponent} from './item-description/item-description.component';
 import {LanguageComponent} from './language/language.component';
 
-
+// This Routes compose the specific location of each component, helping the app request particular pages or components.
 const routes: Routes = [
     { path:"", redirectTo: '/restaurant', pathMatch: 'full' },
     { path: 'restaurant/:menu_id/:table_num', component: CoverComponent},

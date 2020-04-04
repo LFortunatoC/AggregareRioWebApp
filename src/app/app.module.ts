@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {AppRoutingModule, RoutingComponents} from './app-routing.module';
+import { AppRoutingModule, RoutingComponents} from './app-routing.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
-import { FooterBttsComponent } from './tools/buttons/footer-btts/footer-btts.component';
+//import { FooterBttsComponent } from './tools/buttons/footer-btts/footer-btts.component';
 
 import { CommunicationService } from './communication/communication.service';
 import { RequestCacheService } from './communication/request-cache.service';
@@ -34,6 +34,10 @@ import { ItemOrdersComponent } from './item-orders/item-orders.component';
 import { ChecklistComponent } from './tools/checklist/checklist.component';
 import { SubcategoryComponent } from './subcategory/subcategory.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { BillBtnComponent } from './tools/buttons/bill-btn/bill-btn.component';
+import { CallWaiterBtnComponent } from './tools/buttons/call-waiter-btn/call-waiter-btn.component';
+import { OrderBtnComponent } from './tools/buttons/order-btn/order-btn.component';
+import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component';
 import { ItemDescriptionComponent } from './item-description/item-description.component';
 import { LanguageComponent } from './language/language.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -44,11 +48,10 @@ import { ConfirmationDialogComponent } from './components/shared/confirmation-di
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    FooterBttsComponent,
+    //FooterBttsComponent,
     NavbarComponent,
     InfobartitleComponent,
     CategoryComponent,
@@ -66,11 +69,13 @@ import { ConfirmationDialogComponent } from './components/shared/confirmation-di
     ItemOrdersComponent,
     ChecklistComponent,
     SubcategoryComponent,
+    BillBtnComponent,
+    CallWaiterBtnComponent,
+    OrderBtnComponent,
+    StartBtnComponent,
     ItemDescriptionComponent,
     LanguageComponent,
     ConfirmationDialogComponent,
-    
-    
   ],
 
   imports: [

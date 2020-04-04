@@ -1,0 +1,31 @@
+.elements {
+    margin: 0 10% 0 10%;
+}
+
+#logo {
+    width: 100%;
+}
+
+#picture {
+    max-width: 40%;
+    margin: 5% 5% 2.5% 0;
+    float: left;
+    border-radius: 5%;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.text {
+    vertical-align: middle;
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 100%;
+    font-optical-sizing: 100%;
+}
+
+
+
+

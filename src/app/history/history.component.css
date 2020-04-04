@@ -24,7 +24,7 @@ form {
   }
   
   .value-button:hover {
-    cursor: pointer;
+    cursor: grab;
   }
   
   form #decrease {

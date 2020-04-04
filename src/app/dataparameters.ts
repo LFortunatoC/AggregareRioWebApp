@@ -1,3 +1,8 @@
+// Here we Have the Interfaces used for the whole App
+
+// Using This interfaces along the app, we can load the information and get specific variables when needed
+// the use of those interfaces allows the reusage of code and saves a lot of time.
+
 export interface IData{
     lang_id: number,
     category_id: number
