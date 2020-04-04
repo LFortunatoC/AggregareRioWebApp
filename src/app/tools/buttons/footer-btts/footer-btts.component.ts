@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class FooterBttsComponent  
 {
+// these are the experimental methos to have a different button on the footer area.
+
   // bttCallWaiterText = " Call Waiter ";
   bttBillText = " Bill ";
   billflag = 0;
