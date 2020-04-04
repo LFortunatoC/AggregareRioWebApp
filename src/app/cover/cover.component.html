@@ -5,19 +5,26 @@
     </div>
 </div>
 <div class="body">
-
+    <div class="elements">
+        <img id="logo" src={{cover.logoPath}}>
+        <img id="picture" src={{cover.picturePath}}>
+        <div class="text">
+            <h3> {{cover.description}}  </h3>
+            <p> {{cover.altText1}}  </p>
+            <p> {{cover.altText2}}  </p>
+            <div style="text-align: center;">
+                <a routerLink= '/full-picture'>full-picture<br/> </a>
+                <a routerLink= '/order'>Order | </a>
+                <a routerLink= '/bill'>Bill | </a>
+                <a routerLink= '/cover'>Cover | </a>
+                <a routerLink= '/history'>History | </a>
+                <a routerLink= '/pre-order'>PreOrder</a>
+            </div>
+        </div>
+    </div>
     <!-- <p> {{cover.title}}  </p> -->
-    <p> {{cover.description}}  </p>
-    <img src={{cover.picturePath}}  width=100%; >
-
-    <label> {{cover.altText1}}  </label>
-
-    <label> {{cover.altText2}}  </label>
-
-
-
-<button id="backBtt" (click)="startApp()" mat-stroked-button color="warm" translate="aTitle"></button>
 </div>
-<div class="footer"> 
-    <app-footer-btts></app-footer-btts>
+<div class="footer">
+    <app-call-waiter-btn></app-call-waiter-btn>
+    <app-start-btn></app-start-btn>  
 </div>

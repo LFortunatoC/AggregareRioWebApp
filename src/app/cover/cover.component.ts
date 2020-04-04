@@ -13,7 +13,9 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 export class CoverComponent implements OnInit {
 
 
+
   public name='Welcome!';
+
   sub : any;
   cover: any;
   parameters : IData;
