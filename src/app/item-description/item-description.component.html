@@ -5,6 +5,7 @@
     </div>
 </div>
 <div class="body">
+    <!-- Using the (click) event, we can load a specific item into the system and use its data to navigate -->
         <div class="item-desc" (click)="selectItem(selectedItem)" > 
         <img src={{selectedItem.picturePath}}  width=48px; alt={{selectedItem.title}}><br>{{selectedItem.title}}</div>
         <div> 
@@ -14,6 +15,10 @@
             <label for="comments">Price Per Unit:&nbsp;&nbsp;</label>{{selectedItem.value}}<br>
             <app-button-qt [quantity]="item_qty" (newquantity)="updateQtty($event)"></app-button-qt><br>
             <input type="submit" value="Submit" (click)="addToOrder()">
+
+             <!-- Provisorio enquanto nao tem buttao Order -->
+            <input type="submit" value="go to preOrder" (click)="goToPre()">
+
         </div>
 </div>
 <div class="footer"> 

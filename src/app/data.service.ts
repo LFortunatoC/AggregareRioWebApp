@@ -13,7 +13,7 @@ export class DataService {
     subCategory_id: 0,
     menu_id : 3,
     client_id: 1,
-    order_id: 1,
+    order_id: 2,
     tableNumber: 0,
     OrderTotalValue: 0,
     OrderedItems: null,

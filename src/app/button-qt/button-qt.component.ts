@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { IPreOrder } from '../dataparameters';
 
 @Component({
   selector: 'app-button-qt',
@@ -7,8 +8,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ButtonQtComponent implements OnInit {
 
+// these are the methods exclusive to the Quantity component.
+
   @Input() quantity: number;
   @Output() newquantity = new EventEmitter<number>();
+    
+  pree:any;
+  pre:IPreOrder;
  
   qt: number;
   showQt = false;
@@ -19,11 +25,8 @@ export class ButtonQtComponent implements OnInit {
     this.qt = this.quantity;
   }
 
- 
 
-
-  onShowPlusQt(){
-    
+  onShowPlusQt(){    
        this.showQt = true;
        this.qt = this.qt + 1;
        this.newquantity.emit(this.qt);   
@@ -38,7 +41,6 @@ export class ButtonQtComponent implements OnInit {
     }
     this.newquantity.emit(this.qt);  
 }
-
 
 
 }

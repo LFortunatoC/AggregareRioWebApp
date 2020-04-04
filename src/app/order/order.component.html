@@ -11,23 +11,25 @@
     </div>
         <ul id="hd" class="list-group">
             <li class="list-group-item d-flex justify-content-start">
-                <div style="width: 55%;" translate="name"></div>
-                <div style="width: 20%;" translate="oPrice"></div>
-                <div style="width: 5%;" translate="oQty"></div>
-                <div style="width: 25%;" translate="oTotal"></div><!-- <th>Total</th> -->
+                <div style="width: 50%;">Name</div>
+                <div style="width: 20%;">Price</div>
+                <div style="width: 10%;">Qty</div>
+                <div style="width: 20%;">Total</div><!-- <th>Total</th> -->
             </li>
         </ul>
         <ul class="list-group" *ngFor = "let orderedItem of order.items; index as i">
             <li class="list-group-item d-flex justify-content-start"> 
-                <div style="width: 55%;">{{orderedItem.title}}</div>
-                <div style="width: 25%;">${{orderedItem.currPrice}}</div>
+                <div style="width: 50%;">{{orderedItem.title}}</div>
+                <div style="width: 20%;">${{orderedItem.currPrice}}</div>
                 <div style="width: 10%;">{{orderedItem.qty}}</div>
+                <div style="width: 20%;">{{orderedItem.total}}</div>
             </li>
         </ul>
 </div>
 
 <div class="footer"> 
-    <app-footer-btts></app-footer-btts>
+    <app-call-waiter-btn></app-call-waiter-btn>
+    <app-bill-btn></app-bill-btn>
 </div>
 
 

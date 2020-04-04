@@ -4,7 +4,7 @@
 .header {
     position: fixed;
     top: 0;
-    height: 70px;
+    height: 12%;
     background-color:#FFB35D;
     width: 100%;
 }
@@ -12,8 +12,8 @@
 .body {
     position: fixed;
     width: 100%;
-    top:70px;
-    height: 438px;
+    top:12%;
+    height: 76%;
     background-color: #EEECE1;
     overflow: scroll;
 }
@@ -21,9 +21,18 @@
 .footer {
     position: fixed;
     width: 100%;
-    top:509px;
+    top:88%;
+    height: 100%;
+    padding: 0.5%;
     background-color: #000000;
-    height: 60px;
+}
+
+.buttonFooter {
+    width:49.3%;
+    height: 11%;
+    background-color: #930000;
+    color: #FFFFFF;
+    font-size: 16px;
 }
 
 #backBtt {
