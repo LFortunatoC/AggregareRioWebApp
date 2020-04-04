@@ -12,7 +12,7 @@ import { IData } from '../dataparameters';
 export class CoverComponent implements OnInit {
 
 
-  name='';
+  name="Cover";
   sub : any;
   cover: any;
   parameters : IData;

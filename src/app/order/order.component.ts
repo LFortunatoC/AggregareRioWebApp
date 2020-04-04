@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {CommunicationService} from '../communication/communication.service';
-import {DataService} from '../data.service';
+import { CommunicationService} from '../communication/communication.service';
+import { DataService} from '../data.service';
 import { IData } from '../dataparameters';
 import { Router} from '@angular/router';
 
@@ -15,7 +15,7 @@ export class OrderComponent implements OnInit {
   order: any;
   parameters : IData;
   
-
+  //if (There is no Order) { the Order button must be inactive }.
   
   constructor(private service : CommunicationService, private data: DataService, private router: Router) {
     this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
