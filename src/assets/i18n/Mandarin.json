@@ -1,0 +1,22 @@
+{
+    "aTitle": "启动应用",
+    "text": "主菜单",
+    "language": "语言",
+    "cTitle": "类别",
+    "scTitle": "子类别",
+    "iTitle": "项目",
+    "idTitle": "商品描述",
+    "oTitle": "订购",
+    "poTitle": "预购",
+    "bTitle":"法案",
+    "hTitle": "历史",
+    "lTitle": "语言",
+    "call": "服务员",
+    "name": "名称",
+    "oTable": "表",
+    "oPrice": "价钱",
+    "oQty": "数量",
+    "oTotal": "总"
+    
+
+}

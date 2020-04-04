@@ -1,0 +1,23 @@
+<div class="header">
+    <app-navbar></app-navbar> 
+    
+    <div class="title">
+        <app-infobartitle #title [parentData] translate="lTitle"></app-infobartitle>
+   </div>
+</div>
+  <div class="body">
+        <ul class="list-group" *ngFor = "let lang of languages.data; index as i" >
+            <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectLang(lang)"> 
+                <div class="image-parent">
+                    <img class="img-fluid" src={{lang.flagPath}}   alt={{lang.language}} >
+                </div>
+                <div class="flex-column">
+                    <p>{{lang.language}}</p>
+                </div>               
+            </li>
+        </ul>
+</div>
+
+<div class="footer"> 
+    <app-footer-btts></app-footer-btts>
+</div>

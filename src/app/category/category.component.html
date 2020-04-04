@@ -1,12 +1,12 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData]="name"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="cTitle"></app-infobartitle>
     </div>
 </div>
 <div class="body">
     <ul class="list-group" *ngFor = "let category of categories; index as i" >
-        <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectItem(category.id)">
+        <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectItem(category.category_id)">
             <div class="image-parent">
                 <img class="img-fluid" src={{category.picturePath}}   alt={{category.title}}>
             </div>

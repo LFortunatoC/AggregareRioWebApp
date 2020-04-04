@@ -1,13 +1,13 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData]="name"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="oTitle"></app-infobartitle>
     </div>
 </div>
 <div class="body">
     <div class="index">
         <div id="order">Ref# {{order.id}}</div>
-        <div id="table">Table {{order.tableNumber}}</div>
+        <div id="table" translate="oTable">{{order.tableNumber}}</div>
     </div>
         <ul id="hd" class="list-group">
             <li class="list-group-item d-flex justify-content-start">

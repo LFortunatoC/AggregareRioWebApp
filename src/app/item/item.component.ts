@@ -12,7 +12,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 })
 export class ItemComponent implements OnInit {
 
-  name = "Items"; //should be changed for a name retrived from table
+  // name = "Items"; //should be changed for a name retrived from table
   
   parameters : IData;
   selectedItem: IItem;
@@ -33,7 +33,7 @@ export class ItemComponent implements OnInit {
    selectItem(item: any) {
      this.selectedItem = item;
      this.data.changeItem(this.selectedItem);
-    //  this.router.navigateByUrl('/itemDescription/');  // Mauricio descomente esta linha para chamar seu componente....
+      this.router.navigateByUrl('/item-description'); 
    }
 
 

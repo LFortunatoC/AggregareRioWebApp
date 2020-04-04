@@ -1,5 +1,6 @@
 // import { Component } from '@angular/core';
 
+
 // @Component({
 //   selector: 'app-footer-btts',
 //   templateUrl: './footer-btts.component.html',
@@ -9,7 +10,6 @@
 // {
 //   billflag = 0;
 //   clickOnandOff= 0;
-
 //   clickToggle()
 //   {
 //     if (this.clickOnandOff === 0) 
@@ -34,4 +34,4 @@
 //   }
 
 
-}
+//}

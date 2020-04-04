@@ -19,7 +19,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './tools/navbar/navbar.component';
 import { InfobartitleComponent } from './tools/infobartitle/infobartitle.component';
 import { CategoryComponent } from './category/category.component';
-import { LangDropListComponent } from './tools/lang-drop-list/lang-drop-list.component';
 import { BillComponent } from './bill/bill.component';
 import { CoverComponent } from './cover/cover.component';
 import { FullPictureComponent } from './full-picture/full-picture.component';
@@ -38,6 +37,14 @@ import { BillBtnComponent } from './tools/buttons/bill-btn/bill-btn.component';
 import { CallWaiterBtnComponent } from './tools/buttons/call-waiter-btn/call-waiter-btn.component';
 import { OrderBtnComponent } from './tools/buttons/order-btn/order-btn.component';
 import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component';
+import { ItemDescriptionComponent } from './item-description/item-description.component';
+import { LanguageComponent } from './language/language.component';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient } from '@angular/common/http';
+
+
+
 
 @NgModule({
   declarations: [
@@ -46,7 +53,6 @@ import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component
     NavbarComponent,
     InfobartitleComponent,
     CategoryComponent,
-    LangDropListComponent,
     BillComponent,
     CoverComponent,
     FullPictureComponent,
@@ -57,7 +63,6 @@ import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component
     ButtonsComponent,
     RoutingComponents,
     PageNotFoundComponent,
-    //PreOrder_History_Pages,
     ButtonQtComponent,
     ItemOrdersComponent,
     ChecklistComponent,
@@ -66,6 +71,8 @@ import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component
     CallWaiterBtnComponent,
     OrderBtnComponent,
     StartBtnComponent
+    ItemDescriptionComponent,
+    LanguageComponent,
   ],
 
   imports: [
@@ -78,7 +85,16 @@ import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component
     MatToolbarModule,
     MatListModule,
     HttpClientModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
+
   ],
   providers: [CommunicationService,
               RequestCacheService,
@@ -88,3 +104,7 @@ import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component
   bootstrap: [AppComponent, RoutingComponents]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
