@@ -12,16 +12,10 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
   styleUrls: ['./item-description.component.css']
 })
 export class ItemDescriptionComponent implements OnInit {
-
- 
-  @Output() newpreOrder = new EventEmitter<IPreOrder>();
-  onSubmit() {
-    this.newpreOrder.emit(this.preOrder);
-  }
  
   parameters : IData;
   selectedItem: any;
-  @Input('preOrder') preOrder: IPreOrder;
+  preOrder: IPreOrder;
   itemsDesc: any;
   selectLang = 0;
   item_qty: number; 
@@ -105,4 +99,9 @@ else{
     this.item_qty=$event;
   }
 
+//Criei para test
+  goToPre() {   
+    
+     this.router.navigateByUrl('/pre-order'); 
+  }
 }
