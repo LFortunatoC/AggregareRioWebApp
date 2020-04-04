@@ -5,6 +5,7 @@
     </div>
 </div>
 <div class="body">
+    <!-- Using the (click) event, we can load a specific item into the system and use its data to navigate -->
         <div class="item-desc" (click)="selectItem(selectedItem)" > 
         <img src={{selectedItem.picturePath}}  width=48px; alt={{selectedItem.title}}><br>{{selectedItem.title}}</div>
         <div> 
