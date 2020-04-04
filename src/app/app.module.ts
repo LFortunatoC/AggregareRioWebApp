@@ -42,6 +42,7 @@ import { LanguageComponent } from './language/language.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient } from '@angular/common/http';
+import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.component';
 
 
 
@@ -70,9 +71,10 @@ import {HttpClient } from '@angular/common/http';
     BillBtnComponent,
     CallWaiterBtnComponent,
     OrderBtnComponent,
-    StartBtnComponent
+    StartBtnComponent,
     ItemDescriptionComponent,
     LanguageComponent,
+    AddItemBtnComponent,
   ],
 
   imports: [
