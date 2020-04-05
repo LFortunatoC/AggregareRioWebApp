@@ -1,7 +1,7 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData] translate="idTitle"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="tItemDesc"></app-infobartitle>
     </div>
 </div>
 <div class="bodyFirst">
@@ -23,7 +23,7 @@
 </div>
 <form class="bodyThird">
     <div class="form-group">
-        <label for="comments">Comments:</label>
+        <label for="comments" translate="iComments"></label>
         <textarea class="form-control" id="comments" name="comments" rows="2" maxlength="140"></textarea>
     </div>
 </form>
@@ -33,7 +33,7 @@
         </div>
     </div>
 <div class="footer"> 
-    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit" (click)="addToOrder()">Add Item</button>
-    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="go to preOrder" (click)="goToPre()">Order</button>  
+    <app-add-item-btn></app-add-item-btn>
+    <app-order-btn></app-order-btn>
 </div>
 

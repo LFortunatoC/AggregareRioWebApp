@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BillBtnComponent implements OnInit {
 
-  bttBillText = " Bill ";
+  // bttBillText = " Bill ";
 
   constructor() { }
 

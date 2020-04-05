@@ -8,7 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class CallWaiterBtnComponent implements OnInit {
 
-  bttCallWaiterText = " Call Waiter ";
+  // bttCallWaiterText = " Call Waiter ";
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   public popWaiter() {

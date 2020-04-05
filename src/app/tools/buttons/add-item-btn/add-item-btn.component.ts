@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddItemBtnComponent implements OnInit {
 
-  bttAddItemText = " Add Item ";
+  // bttAddItemText = " Add Item ";
   constructor() { }
 
   ngOnInit(): void {

@@ -3,24 +3,23 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData] translate="oTitle"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="tOrder"></app-infobartitle>
     </div>
 </div>
 <div class="body">
    
     <div class="index">
-        <div id="order">Reference:  {{order.order_id}}</div>
-        <div id="table" translate="oTable">
-            <span>  {{order.tableNumber}}</span>
-        </div>
-        
+          <div id="order">Reference:  {{order.order_id}}</div>
+          <div id="table" translate="oTable">
+              <span>  {{order.tableNumber}}</span>
+            </div>
     </div>
         <ul id="hd" class="list-group">
             <li class="list-group-item d-flex justify-content-start">
-                <div style="width: 50%;">Name</div>
-                <div style="width: 20%;">Price</div>
-                <div style="width: 10%;">Qty</div>
-                <div style="width: 20%;">Total</div>
+                <div style="width: 50%;" translate="iName"></div>
+                <div style="width: 20%;" translate="iPrice"></div>
+                <div style="width: 10%;" translate="iQty"></div>
+                <div style="width: 20%;" translate="iTotal"></div><!-- <th>Total</th> -->
             </li>
         </ul>
         <ul class="list-group" *ngFor = "let orderedItem of order.itemList; index as i">
