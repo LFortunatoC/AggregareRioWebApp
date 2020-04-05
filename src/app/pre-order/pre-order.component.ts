@@ -5,7 +5,6 @@ import {DataService} from '../data.service';
 import { IData } from '../dataparameters';
 import { Router} from '@angular/router';
 
-
 @Component({
   selector: 'app-pre-order',
   templateUrl: './pre-order.component.html',
@@ -29,19 +28,13 @@ export class PreOrderComponent implements OnInit {
      this.data.currentPreOrder.subscribe(parameters => this.preOrder = parameters);
   }
 
-     
-
   ngOnInit(): void {
     this.table = this.parameters.tableNumber;  
-    console.dir( this.preOrder);
   }
 
   addToOrder() {
     let item : IPreOrderItem = {item_id: 0, qty: 0, currPrice: 0, title:'' };
     let removedItems: Array<IPreOrderItem>;
-
-    console.dir( this.preOrder.itemList); 
-    
     this.preOrder.itemList.forEach((element,index) => {
       if (element.qty == 0) {
           removedItems.push(element);
@@ -50,9 +43,8 @@ export class PreOrderComponent implements OnInit {
     });
     
     this.data.changePreOrder(this.preOrder);
-    console.dir( this.preOrder.itemList); 
     this.postOrder();
-
+    
   }
 
    getItemListIndex(id){
@@ -63,10 +55,13 @@ export class PreOrderComponent implements OnInit {
     this.preOrder.itemList[idx].qty=$event;
   }
 
-  postOrder (){
-    this.service.postOrder (this.preOrder)
+  postOrder (): any{
+    this.service.postPreOrder(this.preOrder)
     .subscribe(data => {
        this.response = data;
+       this.preOrder.order_id=this.response.order.id;
+       this.data.changePreOrder(this.preOrder);
+       this.router.navigateByUrl('/order');
     }); 
    }
 

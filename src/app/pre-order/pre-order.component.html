@@ -24,7 +24,7 @@
                 <div style="width: 20%;">${{preOrder.currPrice}}</div>               
                 <div style="width: 25%;"><app-button-qt [quantity]="preOrder.qty" (newquantity)="updateQtty($event,i)"></app-button-qt></div>
             </li>     
-        </ul>  
+        </ul>   
 
     <!-- Provisorio enquanto nao tem buttao Order -->
     <input type="submit" value="Submit" (click)="addToOrder()"> 

@@ -11,17 +11,16 @@ import { Router} from '@angular/router';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-  // name = "Order";
+  public name = "Order";
 
   order: any;
   parameters : IData;
- // preOrder: IPreOrder;
-  
-  //if (There is no Order) { the Order button must be inactive }.
+  table: number;
   
   constructor(private service : CommunicationService, private data: DataService, private router: Router) {
     this.data.currentParameters.subscribe(parameters => this.parameters = parameters);
-    //this.data.currentPreOrder.subscribe(parameters => this.preOrder = parameters);
+    this.data.currentPreOrder.subscribe(parameters => this.order = parameters);
+
    }
 
 
@@ -29,11 +28,29 @@ export class OrderComponent implements OnInit {
     this.service.getOrder (parameters)
     .subscribe(data => {
        this.order = data;
-    }); 
+     }); 
    }
 
   ngOnInit(): void {
-    this.getOrder(this.parameters)
+   this.table = this.parameters.tableNumber;
+  }
+
+  getGrandTotal() {
+    let grandTotal = 0;
+    this.order.itemList.forEach(element => {
+      grandTotal = grandTotal + (element.currPrice * element.qty); 
+    });
+    
+    return grandTotal;
+  }
+
+  getTotalItems() {
+    let numItems = 0;
+    this.order.itemList.forEach(element => {
+      numItems = numItems + element.qty; 
+    });
+    
+    return numItems;
   }
 
 }

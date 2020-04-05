@@ -53,8 +53,11 @@ export class ItemDescriptionComponent implements OnInit {
         item.currPrice = this.selectedItem.value;   
         this.preOrder.itemList.push(item);
     }
+    if (this.preOrder.tableNumber == 0) {
+      this.preOrder.tableNumber = this.parameters.tableNumber;
+
+    }
     this.data.changePreOrder(this.preOrder);
-    console.dir( this.preOrder.itemList); 
   }
 
 
@@ -92,7 +95,6 @@ export class ItemDescriptionComponent implements OnInit {
     this.item_qty=$event;
   }
 
-//Criei para test
   goToPre() {   
     
      this.router.navigateByUrl('/pre-order'); 

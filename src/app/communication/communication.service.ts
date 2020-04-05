@@ -8,6 +8,7 @@ import { ICover } from '../cover/cover';
 import {IItem} from '../item/item';
 import {IOrder} from '../order/order';
 import { Observable } from 'rxjs';
+import { retry} from 'rxjs/operators';
 import {ILanguage}from '../language/language'
 
 
@@ -70,8 +71,8 @@ export class CommunicationService {
   }
 
 
-  getOrder (parameters:any) :Observable <IOrder[]> {
-    return this.http.get<IOrder[]>(this.OrderUrl + parameters.order_id,{
+  getOrder (parameters:any) :Observable <IPreOrder[]> {
+    return this.http.get<IPreOrder[]>(this.OrderUrl + parameters.order_id,{
       params: new HttpParams()
       .set('language_id', parameters.lang_id)
     } );
@@ -81,10 +82,13 @@ export class CommunicationService {
     return this.http.get<ILanguage[]>(this.LanguageUrl);
   }
 
-  postOrder (parameters:any) :Observable <any> {
+  postPreOrder  (parameters:any) :Observable <IOrder[]>{
     return this.http.post<IOrder[]>(this.OrderUrl,{
-      params: new HttpParams()
-      .set('',parameters)
-    } );
+      
+      tableNumber: parameters.tableNumber,
+      deliveredAt: parameters.deliveredAt.toISOString().slice(0, 19).replace('T', ' '),
+      itemList:  parameters.itemList,
+      observe: "res"}).pipe(retry(3),
+      );
   }
 }
