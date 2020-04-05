@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderBtnComponent implements OnInit {
 
-  bttOrderText = " Order ";
+  // bttOrderText = " Order ";
 
   constructor() { }
+
+  
 
   ngOnInit(): void {
   }

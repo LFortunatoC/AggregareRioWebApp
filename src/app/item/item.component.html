@@ -1,7 +1,7 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData] translate="iTitle"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="tItem"></app-infobartitle>
     </div>
 </div>
 <div class="body">
@@ -12,14 +12,14 @@
                 <img class="img-fluid" src={{item.picturePath}}   alt={{item.title}}>
             </div>
             <div class="flex-column">
-                <p>{{item.title}}&nbsp;{{item.value}}</p>
+                <p>{{item.title}}&nbsp; ${{item.value}}</p>
             </div>
         </li>
         <!-- <li class="list-group-item"> <img [lazyLoad]= item.picturePath width=48px; alt={{item.title}}> {{item.title}} </li> -->
     </ul>
 </div>
 <div class="footer"> 
-
-    <!-- <app-footer-btts></app-footer-btts> -->
+    <app-call-waiter-btn></app-call-waiter-btn>
+    <app-order-btn></app-order-btn>
 </div>
 

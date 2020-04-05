@@ -1,7 +1,7 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData] translate="poTitle"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="tPreOrder"></app-infobartitle>
     </div>
 </div>
 <div class="body">
@@ -11,9 +11,9 @@
     </div>
         <ul id="hd" class="list-group">
             <li class="list-group-item d-flex justify-content-start">
-                <div style="width: 55%;" translate="name"></div>
-                <div style="width: 20%;" translate="oPrice"></div>
-                <div style="width: 25%;" translate="oQty"></div>
+                <div style="width: 55%;" translate="iName"></div>
+                <div style="width: 20%;" translate="iPrice"></div>
+                <div style="width: 25%;" translate="iQty"></div>
                 <!-- <th>Total</th> -->
             </li>
         </ul>
@@ -36,6 +36,6 @@
 
 <div class="footer"> 
     <app-call-waiter-btn></app-call-waiter-btn>
-    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit">Add Item</button>
+    <app-add-item-btn></app-add-item-btn>
     <!-- this buttons are only placeholders that should be finished -->
 </div>
