@@ -43,13 +43,16 @@ export interface IItem {
 };
 
 export interface IPreOrder {
+    order_id: number,
     tableNumber: number,
     deliveredAt: Date,
+    canceled: boolean,
     itemList: Array <IPreOrderItem>
 }
 
 export interface IPreOrderItem {
     item_id: number,
+    title: String,
     qty: number,
     currPrice: number
 }

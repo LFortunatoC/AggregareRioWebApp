@@ -1,3 +1,5 @@
+<script src="jquery-3.4.1.min.js"></script>
+
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
@@ -5,9 +7,12 @@
     </div>
 </div>
 <div class="body">
+   
     <div class="index">
-        <div id="order">Ref# {{order.id}}</div>
-        <div id="table">Table {{order.tableNumber}}</div>
+          <div id="order">Reference:  {{order.order_id}}</div>
+          <div id="table" translate="oTable">
+              <span>  {{order.tableNumber}}</span>
+            </div>
     </div>
         <ul id="hd" class="list-group">
             <li class="list-group-item d-flex justify-content-start">
@@ -17,14 +22,24 @@
                 <div style="width: 20%;" translate="iTotal"></div><!-- <th>Total</th> -->
             </li>
         </ul>
-        <ul class="list-group" *ngFor = "let orderedItem of order.items; index as i">
-            <li class="list-group-item d-flex justify-content-start"> 
+        <ul class="list-group" *ngFor = "let orderedItem of order.itemList; index as i">
+            <li class="list-group-item d-flex justify-content-start">     
                 <div style="width: 50%;">{{orderedItem.title}}</div>
                 <div style="width: 20%;">${{orderedItem.currPrice}}</div>
                 <div style="width: 10%;">{{orderedItem.qty}}</div>
-                <div style="width: 20%;">{{orderedItem.total}}</div>
+                <div style="width: 20%;" class="totalprice">${{(orderedItem.qty * orderedItem.currPrice)| number}}</div>
             </li>
         </ul>
+
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-start">
+                <div style="width: 50%;"></div>
+                <div style="width: 20%;">Totals</div>
+                <div style="width: 10%;">{{getTotalItems()| number}}</div>
+                <div style="width: 20%;">${{getGrandTotal()| number}}</div>
+            </li>
+        </ul>
+
 </div>
 
 <div class="footer"> 
