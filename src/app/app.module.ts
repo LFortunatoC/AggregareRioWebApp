@@ -44,6 +44,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient } from '@angular/common/http';
 import { ConfirmationDialogComponent } from './components/shared/confirmation-dialog/confirmation-dialog.component';
+import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.component';
 
 
 
@@ -76,6 +77,7 @@ import { ConfirmationDialogComponent } from './components/shared/confirmation-di
     ItemDescriptionComponent,
     LanguageComponent,
     ConfirmationDialogComponent,
+    AddItemBtnComponent,
   ],
 
   imports: [

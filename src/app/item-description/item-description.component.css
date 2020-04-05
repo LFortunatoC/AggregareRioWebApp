@@ -1,0 +1,67 @@
+.mat-raised-button {
+    margin: 1px;
+}
+
+h3 {
+    font-weight: bold;
+}
+#itemDescPicture {
+    max-width:100%;
+    height: auto;
+}
+
+#description {
+    height: 30%;
+    margin:2% 5%;
+    overflow: scroll;
+}
+
+.list-group-item {
+    font-weight: bold;
+    background-color: #EEECE1;
+}
+
+.form-control {
+    font-family: inherit;
+}
+
+.bodyFirst {
+    position: fixed;
+    width: 100%;
+    top:12%;
+    height: 41%;
+    background-color: #EEECE1;
+}
+
+.bodySecond {
+    vertical-align: middle;
+    width: 100%;
+    position: fixed;
+    padding:  5px 5%;
+    top:53%;
+    height: 10%;
+    background-color: #FFF;
+    overflow: scroll;
+}
+
+.bodyThird {
+    vertical-align: middle;
+    width: 100%;
+    position: fixed;
+    padding: 5px 5%;
+    top:64%;
+    height: 17%;
+    background-color: #FFF;
+}
+
+.bodyFourth {
+    position: fixed;
+    padding: 5px 5%;
+    width: 100%;
+    top:81%;
+    height: 7%;
+    background-color: #FFB35D;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -8,7 +8,7 @@
     <ul class="list-group" *ngFor = "let category of categories; index as i" >
         <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectItem(category.category_id)">
             <div class="image-parent">
-                <img class="img-fluid" src="./assets/icon/Image{{i}}.png"  alt={{category.title}}>
+                <img class="img-fluid" src="./assets/icon/Image{{i}}.png"   alt={{category.title}}>
             </div>
             <div class="flex-column">
                 <p>{{category.description}}</p>
