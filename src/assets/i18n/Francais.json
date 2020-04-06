@@ -15,6 +15,7 @@
     "bttCallWaiter": "Serveur",
     "bttOrder": "Commande",
     "bttAddItem": "Ajouter un item",
+    "bttMakeOrder": "Commander",
     "bttBill": "Addition",
     "iName": "Nom",
     "iTable": "Table",

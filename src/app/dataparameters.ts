@@ -11,9 +11,7 @@ export interface IData{
     client_id: number,
     order_id:number,
     tableNumber: number,
-    OrderTotalValue: number,
-    OrderedItems,
-    total
+    hasOrdertoPlace: boolean,
 };
 
 export interface ItemOrdered {

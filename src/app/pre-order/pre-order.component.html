@@ -6,7 +6,6 @@
 </div>
 <div class="body">
     <div class="index">
-        <!-- <div id="order">Ref# {{order.id}}</div> -->
         <div id="table">Table {{table}}</div>
     </div>
         <ul id="hd" class="list-group">
@@ -14,7 +13,6 @@
                 <div style="width: 55%;" translate="iName"></div>
                 <div style="width: 20%;" translate="iPrice"></div>
                 <div style="width: 25%;" translate="iQty"></div>
-                <!-- <th>Total</th> -->
             </li>
         </ul>
         
@@ -26,12 +24,12 @@
             </li>     
         </ul>   
 
-    <!-- Provisorio enquanto nao tem buttao Order -->
-    <input type="submit" value="Submit" (click)="addToOrder()"> 
 </div>
 
 <div class="footer"> 
     <app-call-waiter-btn></app-call-waiter-btn>
-    <app-add-item-btn></app-add-item-btn>
+    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit" (click)="addToOrder()" translate="bttMakeOrder"></button>
+
+    <!-- <app-add-item-btn></app-add-item-btn> -->
     <!-- this buttons are only placeholders that should be finished -->
 </div>

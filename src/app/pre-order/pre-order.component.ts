@@ -37,15 +37,20 @@ export class PreOrderComponent implements OnInit {
     let removedItems: Array<IPreOrderItem>;
     this.preOrder.itemList.forEach((element,index) => {
       if (element.qty == 0) {
-          removedItems.push(element);
+         // removedItems.push(element);
           this.preOrder.itemList.splice(this.index,1);  // qtty =o remove item from PreOrder
       }   
     });
     
     this.data.changePreOrder(this.preOrder);
+
+  if (this.preOrder.itemList === undefined || this.preOrder.itemList.length == 0) {
+      this.parameters.hasOrdertoPlace=false;
+      this.data.changeParameters(this.parameters);
+  } else {
     this.postOrder();
-    
   }
+}
 
    getItemListIndex(id){
     return this.preOrder.itemList.findIndex(x=>x.item_id===id)   

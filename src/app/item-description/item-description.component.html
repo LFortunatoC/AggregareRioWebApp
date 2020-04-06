@@ -33,7 +33,9 @@
         </div>
     </div>
 <div class="footer"> 
-    <app-add-item-btn></app-add-item-btn>
-    <app-order-btn></app-order-btn>
+    <!-- <app-add-item-btn></app-add-item-btn> -->
+    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit" (click)="addToOrder()" translate="bttAddItem"></button>
+      <!-- <app-order-btn></app-order-btn> -->
+    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="go to preOrder" (click)="goToPre()" translate="bttOrder"></button>  
 </div>
 

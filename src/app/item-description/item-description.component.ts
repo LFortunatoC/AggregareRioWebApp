@@ -45,6 +45,10 @@ export class ItemDescriptionComponent implements OnInit {
               this.preOrder.itemList[this.index].qty = this.item_qty; //item already in preorder update qtty
         } else {
               this.preOrder.itemList.splice(this.index,1);  // qtty =o remove item from PreOrder
+
+              if (this.preOrder.itemList === undefined || this.preOrder.itemList .length == 0) {
+                this.parameters.hasOrdertoPlace=false;
+            }
         }    
     } else {
         item.item_id = this.selectedItem.id;
@@ -52,12 +56,14 @@ export class ItemDescriptionComponent implements OnInit {
         item.qty = this.item_qty;
         item.currPrice = this.selectedItem.value;   
         this.preOrder.itemList.push(item);
+        this.parameters.hasOrdertoPlace=true;
     }
     if (this.preOrder.tableNumber == 0) {
       this.preOrder.tableNumber = this.parameters.tableNumber;
 
     }
     this.data.changePreOrder(this.preOrder);
+    this.data.changeParameters(this.parameters);
   }
 
 

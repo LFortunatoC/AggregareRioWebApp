@@ -13,6 +13,7 @@
     "bttCallWaiter": "Waiter",
     "bttOrder": "Order",
     "bttAddItem": "Add Item",
+    "bttMakeOrder": "Place Order",
     "bttBill": "Bill",
     "iName": "Name",
     "iTable": "Table",
