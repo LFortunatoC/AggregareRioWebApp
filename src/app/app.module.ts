@@ -7,15 +7,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule, RoutingComponents} from './app-routing.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 //import { FooterBttsComponent } from './tools/buttons/footer-btts/footer-btts.component';
-
 import { CommunicationService } from './communication/communication.service';
 import { RequestCacheService } from './communication/request-cache.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import {CominterceptorInterceptor} from './communication/cominterceptor.interceptor';
-import {MatIconModule} from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { CominterceptorInterceptor } from './communication/cominterceptor.interceptor';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavbarComponent } from './tools/navbar/navbar.component';
 import { InfobartitleComponent } from './tools/infobartitle/infobartitle.component';
 import { CategoryComponent } from './category/category.component';
@@ -39,10 +38,11 @@ import { OrderBtnComponent } from './tools/buttons/order-btn/order-btn.component
 import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component';
 import { ItemDescriptionComponent } from './item-description/item-description.component';
 import { LanguageComponent } from './language/language.component';
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient } from '@angular/common/http';
+import { TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import { TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
 import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -75,6 +75,7 @@ import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.c
     ItemDescriptionComponent,
     LanguageComponent,
     AddItemBtnComponent,
+    ModalComponent,
   ],
 
   imports: [

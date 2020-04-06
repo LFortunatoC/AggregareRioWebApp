@@ -1,3 +1,5 @@
+import { ModalComponent } from './modal/modal.component';
+import {ToolsComponent} from './tools/tools.component';
 import {NgModule} from  '@angular/core';
 import {Routes,RouterModule} from '@angular/router';
 import {BillComponent} from './bill/bill.component';
@@ -28,7 +30,9 @@ const routes: Routes = [
     { path: 'pre-order', component: PreOrderComponent},
     { path: 'item-description', component: ItemDescriptionComponent},
     { path: 'language', component: LanguageComponent},
-    { path: "**", component: PageNotFoundComponent}
+    { path: "**", component: PageNotFoundComponent},
+    { path: 'tools', component: ToolsComponent},
+    { path: 'modal', component: ModalComponent}
 
 
 ];
@@ -50,6 +54,8 @@ export const RoutingComponents = [
                                     OrderComponent, 
                                     PageNotFoundComponent,
                                     PreOrderComponent,
-                                    ItemDescriptionComponent
+                                    ItemDescriptionComponent, 
+                                    ToolsComponent,
+                                    ModalComponent
                                     //SubCategoryCompoment
                                 ]

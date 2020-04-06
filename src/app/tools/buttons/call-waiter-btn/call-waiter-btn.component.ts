@@ -15,7 +15,6 @@ export class CallWaiterBtnComponent implements OnInit {
       this.router.navigateByUrl('/restaurant/3/10');
     }
 
-
   ngOnInit(): void {
   }
 

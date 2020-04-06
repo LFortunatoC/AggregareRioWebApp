@@ -1,24 +1,19 @@
 .list-group-item {
-    margin-top: 1px;
-    padding:5% 10%;
-    vertical-align: middle;
     background-color: #CECCC0;
     text-align: center;
     color: #FFFFFF;
-    line-height: 45px;
     width: 100%;
     font-size: 20px;
     font-variant-caps: titling-caps;
-    
 }
 
 .flex-column {
-    margin-left: 25%;
+    margin-left: 30%;
     font-size: 20px;
 }
 
 .img-fluid {
-    margin-left: 40%;
+    margin: 30%;
     height: 60px;
 }
 
