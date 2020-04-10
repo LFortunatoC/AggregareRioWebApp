@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 export class BillBtnComponent implements OnInit {
 
-  bttBillText = " Bill ";
+  // bttBillText = " Bill ";
 
   billModal() {
     this.router.navigateByUrl('/tools');

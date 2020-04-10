@@ -1,23 +1,29 @@
 
 {
-    "aTitle": "Commencer App",
+    
     "text": "Menu Principal",
-    "language": "Langue",
-    "cTitle": "Catégorie",
-    "scTitle": "Sous Catégorie",
-    "iTitle": "Item",
-    "idTitle": "Description de l'item",
-    "oTitle": "Commande",
-    "poTitle": "Pré-commander",
-    "bTitle":"Addition",
-    "hTitle": "Historique",
-    "lTitle": "Langue",
-    "call": "Serveur",
-    "name": "Nom",
-    "oTable": "Table",
-    "oPrice": "Prix",
-    "oQty": "Qté",
-    "oTotal": "Total"
+    "tCategory": "Catégorie",
+    "tSubCategory": "Sous Catégorie",
+    "tItem": "Item",
+    "tItemDesc": "Description de l'item",
+    "tOrder": "Commande",
+    "tPreOrder": "Pré-commander",
+    "tBill":"Addition",
+    "tHistory": "Historique",
+    "tLanguage": "Langue",
+    "bttStart": "Commencer",
+    "bttCallWaiter": "Serveur",
+    "bttOrder": "Commande",
+    "bttAddItem": "Ajouter un item",
+    "bttMakeOrder": "Commander",
+    "bttBill": "Addition",
+    "iName": "Nom",
+    "iTable": "Table",
+    "iPrice": "Prix",
+    "iQty": "Qté",
+    "iTotal": "Total",
+    "iDelivered": "Livré",
+    "iComments": "Commentaires"
    
 }
 

@@ -12,9 +12,16 @@ import { MatListModule } from '@angular/material/list';
 import { CommunicationService } from './communication/communication.service';
 import { RequestCacheService } from './communication/request-cache.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+<<<<<<< HEAD
 import { CominterceptorInterceptor } from './communication/cominterceptor.interceptor';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+=======
+import {CominterceptorInterceptor} from './communication/cominterceptor.interceptor';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDialogModule} from '@angular/material/dialog';
+>>>>>>> 328230ee145c47d61399bcb800d773d600adc50d
 import { NavbarComponent } from './tools/navbar/navbar.component';
 import { InfobartitleComponent } from './tools/infobartitle/infobartitle.component';
 import { CategoryComponent } from './category/category.component';
@@ -38,9 +45,16 @@ import { OrderBtnComponent } from './tools/buttons/order-btn/order-btn.component
 import { StartBtnComponent } from './tools/buttons/start-btn/start-btn.component';
 import { ItemDescriptionComponent } from './item-description/item-description.component';
 import { LanguageComponent } from './language/language.component';
+<<<<<<< HEAD
 import { TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import { TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
+=======
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient } from '@angular/common/http';
+import { ConfirmationDialogComponent } from './components/shared/confirmation-dialog/confirmation-dialog.component';
+>>>>>>> 328230ee145c47d61399bcb800d773d600adc50d
 import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.component';
 import { ModalComponent } from './modal/modal.component';
 
@@ -74,6 +88,7 @@ import { ModalComponent } from './modal/modal.component';
     StartBtnComponent,
     ItemDescriptionComponent,
     LanguageComponent,
+    ConfirmationDialogComponent,
     AddItemBtnComponent,
     ModalComponent,
   ],
@@ -87,6 +102,7 @@ import { ModalComponent } from './modal/modal.component';
     MatIconModule,
     MatToolbarModule,
     MatListModule,
+    MatDialogModule,
     HttpClientModule,
     LazyLoadImageModule,
     HttpClientModule,

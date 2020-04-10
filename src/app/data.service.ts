@@ -15,9 +15,7 @@ export class DataService {
     client_id: 1,
     order_id: 2,
     tableNumber: 0,
-    OrderTotalValue: 0,
-    OrderedItems: null,
-    total: 0
+    hasOrdertoPlace: false
   }
 
 
@@ -35,7 +33,9 @@ export class DataService {
   }
 
   initialPreOrder: IPreOrder = {
+    order_id :0,
     tableNumber: 0,
+    canceled: false,
     deliveredAt: new Date(),
     itemList: new Array()
   }

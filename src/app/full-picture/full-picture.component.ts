@@ -13,7 +13,7 @@ import {Location} from '@angular/common';
 })
 export class FullPictureComponent implements OnInit {
   
-  name="fullPicture";
+  
   fullPictures:any;
   
   selectedItem: IItem;

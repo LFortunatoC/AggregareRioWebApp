@@ -13,9 +13,7 @@ export class ButtonQtComponent implements OnInit {
   @Input() quantity: number;
   @Output() newquantity = new EventEmitter<number>();
     
-  pree:any;
-  pre:IPreOrder;
- 
+
   qt: number;
   showQt = false;
 

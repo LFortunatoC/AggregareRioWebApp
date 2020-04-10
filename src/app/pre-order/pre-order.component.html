@@ -1,41 +1,35 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData] translate="poTitle"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="tPreOrder"></app-infobartitle>
     </div>
 </div>
 <div class="body">
     <div class="index">
-        <!-- <div id="order">Ref# {{order.id}}</div> -->
         <div id="table">Table {{table}}</div>
     </div>
         <ul id="hd" class="list-group">
             <li class="list-group-item d-flex justify-content-start">
-                <div style="width: 55%;" translate="name"></div>
-                <div style="width: 20%;" translate="oPrice"></div>
-                <div style="width: 25%;" translate="oQty"></div>
-                <!-- <th>Total</th> -->
+                <div style="width: 55%;" translate="iName"></div>
+                <div style="width: 20%;" translate="iPrice"></div>
+                <div style="width: 25%;" translate="iQty"></div>
             </li>
         </ul>
-        <ul class="list-group" *ngFor = "let preOrder of preOrders.items; index as i">
+        
+        <ul class="list-group" *ngFor = "let preOrder of preOrder.itemList; index as i">
             <li class="list-group-item d-flex justify-content-start align-items-center"> 
                 <div style="width: 55%;">{{preOrder.title}}</div>
-                <div style="width: 20%;">${{pree.itemList[i].currPrice}}</div>               
-                <div style="width: 25%;"><app-button-qt [quantity]="item_qty" (newquantity)="updateQtty($event)"></app-button-qt></div>
-               <!-- Provisorio enquanto nao tem buttao Order -->
-            <input type="submit" value="Submit" (click)="addToOrder(pree.itemList[i].item_id)">         
-               
-              
-                <!-- {{pree.itemList[i].qty}} -->
-            </li>
+                <div style="width: 20%;">${{preOrder.currPrice}}</div>               
+                <div style="width: 25%;"><app-button-qt [quantity]="preOrder.qty" (newquantity)="updateQtty($event,i)"></app-button-qt></div>
+            </li>     
+        </ul>   
 
-        
-       
-        </ul>  
 </div>
 
 <div class="footer"> 
     <app-call-waiter-btn></app-call-waiter-btn>
-    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit">Add Item</button>
+    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit" (click)="addToOrder()" translate="bttMakeOrder"></button>
+
+    <!-- <app-add-item-btn></app-add-item-btn> -->
     <!-- this buttons are only placeholders that should be finished -->
 </div>

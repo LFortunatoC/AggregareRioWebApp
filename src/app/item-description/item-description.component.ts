@@ -37,31 +37,33 @@ export class ItemDescriptionComponent implements OnInit {
 
 
    addToOrder() {
-    let item : IPreOrderItem = {item_id: 0, qty: 0, currPrice: 0 };
+    let item : IPreOrderItem = {item_id: 0, qty: 0, currPrice: 0, title:'' };
     this.index = this.getItemListIndex(this.selectedItem.id);
-     
- if(this.item_qty==0){
-   if(this.index>=0){
-  this.preOrder.itemList[this.index].qty = this.item_qty;
-}
-//this.item_qty= 0 ->colocar uma mensagem escolha a quantidade desejada
-else{}
- }
- else{
- 
- if(this.index>=0){
-    this.preOrder.itemList[this.index].qty = this.item_qty;
-}
-else{
-    item.item_id = this.selectedItem.id;
-    item.qty = this.item_qty;
-    item.currPrice = this.selectedItem.value;   
-    this.preOrder.itemList.push(item);
-     }
   
+    if (this.index>=0) {
+       if(this.item_qty > 0 ) {
+              this.preOrder.itemList[this.index].qty = this.item_qty; //item already in preorder update qtty
+        } else {
+              this.preOrder.itemList.splice(this.index,1);  // qtty =o remove item from PreOrder
+
+              if (this.preOrder.itemList === undefined || this.preOrder.itemList .length == 0) {
+                this.parameters.hasOrdertoPlace=false;
+            }
+        }    
+    } else {
+        item.item_id = this.selectedItem.id;
+        item.title = this.selectedItem.title;
+        item.qty = this.item_qty;
+        item.currPrice = this.selectedItem.value;   
+        this.preOrder.itemList.push(item);
+        this.parameters.hasOrdertoPlace=true;
+    }
+    if (this.preOrder.tableNumber == 0) {
+      this.preOrder.tableNumber = this.parameters.tableNumber;
+
+    }
     this.data.changePreOrder(this.preOrder);
-  }
-    console.dir( this.preOrder.itemList); 
+    this.data.changeParameters(this.parameters);
   }
 
 
@@ -99,7 +101,6 @@ else{
     this.item_qty=$event;
   }
 
-//Criei para test
   goToPre() {   
     
      this.router.navigateByUrl('/pre-order'); 

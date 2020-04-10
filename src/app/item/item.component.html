@@ -1,7 +1,7 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData] translate="iTitle"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="tItem"></app-infobartitle>
     </div>
 </div>
 <div class="body">
@@ -11,17 +11,30 @@
             <div class="image-parent" style="width:25%;" >
                 <img class="img-fluid" src={{item.picturePath}}   alt={{item.title}}>
             </div>
+<<<<<<< HEAD
             <div class="flex-column" style="width:45%;">
                 <p>{{item.title}}</p>
             </div>
             <div class="flex-column" style="width:10%;">
                 <p>{{item.value}}</p>
+=======
+            <div class="flex-column">
+                <p>{{item.title}}&nbsp; ${{item.value}}</p>
+>>>>>>> 328230ee145c47d61399bcb800d773d600adc50d
             </div>
         </li>
         <!-- <li class="list-group-item"> <img [lazyLoad]= item.picturePath width=48px; alt={{item.title}}> {{item.title}} </li> -->
     </ul>
 </div>
+<<<<<<< HEAD
 <div class="footer">
     <app-call-waiter-btn></app-call-waiter-btn>
     <app-bill-btn></app-bill-btn>
 </div>
+=======
+<div class="footer"> 
+    <app-call-waiter-btn></app-call-waiter-btn>
+    <app-order-btn></app-order-btn>
+</div>
+
+>>>>>>> 328230ee145c47d61399bcb800d773d600adc50d

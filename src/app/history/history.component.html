@@ -1,7 +1,7 @@
 <div class="header">
     <app-navbar></app-navbar>
     <div class="title">
-        <app-infobartitle #title [parentData] translate="hTitle"></app-infobartitle>
+        <app-infobartitle #title [parentData] translate="tHistory"></app-infobartitle>
     </div>
 </div>
 <div class="body">
@@ -9,7 +9,7 @@
   <h2>Table {{table}}</h2>
    
   <table class="history-table">
-    <tr><th><p>Name</p></th> <th><p>Delivered</p></th></tr>
+    <tr><th><p translate="iName"></p></th> <th><p translate="iDelivered"></p></th></tr>
     <tr class="list-group-history" *ngFor = "let historyitem of history.items; index as i">
         <td>{{historyitem.title}}</td><td><app-checklist></app-checklist></td>
     </tr>
