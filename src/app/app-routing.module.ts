@@ -55,7 +55,6 @@ export const RoutingComponents = [
                                     PageNotFoundComponent,
                                     PreOrderComponent,
                                     ItemDescriptionComponent, 
-                                    ToolsComponent,
-                                    ModalComponent
+                                    ToolsComponent
                                     //SubCategoryCompoment
                                 ]
