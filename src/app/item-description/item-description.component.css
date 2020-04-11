@@ -5,16 +5,6 @@
 h3 {
     font-weight: bold;
 }
-#itemDescPicture {
-    max-width:100%;
-    height: auto;
-}
-
-#description {
-    height: 30%;
-    margin:2% 5%;
-    overflow: scroll;
-}
 
 .list-group-item {
     font-weight: bold;
@@ -25,42 +15,62 @@ h3 {
     font-family: inherit;
 }
 
-.bodyFirst {
+#pictureItem {
+    max-width: 600px;
+}
+#bodyFirst {
     position: fixed;
-    width: 100%;
-    top:12%;
+    top:10%;
     height: 41%;
+    width: 100%;
+    max-width: 600px;
     background-color: #EEECE1;
 }
 
-.bodySecond {
-    vertical-align: middle;
-    width: 100%;
+#bodyFirstItem {
     position: fixed;
-    padding:  5px 5%;
-    top:53%;
+    top: 51%;
+    width: 100%;
+    max-width: 600px;
+}
+
+#bodySecond {
+    position: fixed;
+    width: 98%;
+    max-width: 580px;
+    top:56%;
     height: 10%;
+    vertical-align: middle;
+    margin: auto;
+    padding:  5px 5%;
+    margin: 1%;
     background-color: #FFF;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .bodyThird {
-    vertical-align: middle;
-    width: 100%;
     position: fixed;
-    padding: 5px 5%;
-    top:64%;
+    width: 100%;
+    max-width: 600px;
+    padding: 5px 3%;
+    top:66%;
     height: 17%;
     background-color: #FFF;
 }
 
-.bodyFourth {
+#bodyFourth {
     position: fixed;
+    width:100%;
+    max-width: 600px;
     padding: 5px 5%;
-    width: 100%;
-    top:81%;
+    top:80%;
     height: 7%;
     background-color: #FFB35D;
+}
+
+#item_qty {
+    vertical-align: middle;
+    margin: 2%;
     font-size: 20px;
     font-weight: bold;
     text-align: center;

@@ -1,4 +1,4 @@
-import { ModalComponent } from './modal/modal.component';
+import { CallWaiterComponent } from './call-waiter/call-waiter.component';
 import {ToolsComponent} from './tools/tools.component';
 import {NgModule} from  '@angular/core';
 import {Routes,RouterModule} from '@angular/router';
@@ -21,6 +21,7 @@ const routes: Routes = [
     { path: 'restaurant/:menu_id/:table_num', component: CoverComponent},
     { path: 'cover', component: CoverComponent},
     { path: 'bill', component: BillComponent},
+    { path: 'waiter', component: CallWaiterComponent},
     { path: 'category', component: CategoryComponent},
     { path: 'subcategory', component: SubcategoryComponent},
     { path: 'full-picture', component: FullPictureComponent},
@@ -31,10 +32,7 @@ const routes: Routes = [
     { path: 'item-description', component: ItemDescriptionComponent},
     { path: 'language', component: LanguageComponent},
     { path: "**", component: PageNotFoundComponent},
-    { path: 'tools', component: ToolsComponent},
-    { path: 'modal', component: ModalComponent}
-
-
+    { path: 'tools', component: ToolsComponent}
 ];
 
 @NgModule ({

@@ -1,29 +1,28 @@
-<div class="header">
-    <app-navbar></app-navbar>
-    <div class="title">
-        <app-infobartitle #title [parentData]="name"></app-infobartitle>
+<div class="app">
+    <div class="header">
+        <app-navbar></app-navbar>
+        <div class="title">
+            <app-infobartitle #title [parentData]="name"></app-infobartitle>
+        </div>
     </div>
-</div>
-<div class="body">
-    <div class="elements">
-        <img id="logo" src={{cover.logoPath}}>
-        <img id="picture" src={{cover.picturePath}}>
-        <div class="text">
-            <h3> {{cover.description}}  </h3>
-            <p> {{cover.altText1}}  </p>
-            <p> {{cover.altText2}}  </p>
-            <div style="text-align: center;">
-                <a routerLink= '/full-picture'>full-picture<br/> </a>
-                <a routerLink= '/order'>Order | </a>
-                <a routerLink= '/bill'>Bill | </a>
-                <a routerLink= '/cover'>Cover | </a>
-                <a routerLink= '/history'>History | </a>
-                <a routerLink= '/pre-order'>PreOrder</a>
+    <div class="body">
+        <div class="elements">
+            <img id="logo" src={{cover.logoPath}}>
+            <img id="picture" src={{cover.picturePath}}>
+            <div class="text">
+                <h3> {{cover.description}}  </h3>
+                <p> {{cover.altText1}}  </p>
+                <p> {{cover.altText2}}  </p>
+                <div style="text-align: center;">
+                    <a routerLink= '/order'>Order | </a>
+                    <a routerLink= '/history'>History | </a>
+                    <a routerLink= '/pre-order'>PreOrder</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="footer">
-    <app-call-waiter-btn></app-call-waiter-btn>
-    <app-start-btn></app-start-btn>  
+    <div class="footer">
+        <app-call-waiter-btn></app-call-waiter-btn>
+        <app-start-btn></app-start-btn>  
+    </div>
 </div>

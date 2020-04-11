@@ -12,7 +12,7 @@ export class CallWaiterBtnComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   public popWaiter() {
-      this.router.navigateByUrl('/restaurant/3/10');
+      this.router.navigateByUrl('waiter');
     }
 
   ngOnInit(): void {

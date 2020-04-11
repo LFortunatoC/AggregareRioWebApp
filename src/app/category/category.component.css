@@ -1,20 +1,15 @@
 .list-group-item {
     background-color: #CECCC0;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
     width: 100%;
     font-size: 20px;
     font-variant-caps: titling-caps;
+    
 }
-
-.flex-column {
-    margin-left: 30%;
-    font-size: 20px;
-}
-
 .img-fluid {
-    margin: 30%;
-    height: 60px;
+    margin: 5% 0 5% 40%;
+    height: 80px;
 }
 
 

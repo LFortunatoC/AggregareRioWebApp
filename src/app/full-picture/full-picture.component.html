@@ -1,8 +1,16 @@
-<div class="header">
-    <app-navbar></app-navbar>
-    <div class="title">     
+<div class="app">
+    <div class="header">
+        <app-navbar></app-navbar>
+        <div class="title">     
+        </div>
     </div>
-</div>
-<div class="body bodyFullPicture ">
-          <img src={{selectedItem.picturePath}}  alt={{selectedItem.title}} (click)="returnToItem()" > 
+    <div class="body">
+        <div class="fullPicture">
+            <img src={{selectedItem.picturePath}}  alt={{selectedItem.title}} (click)="returnToItem()" > 
+        </div>
+    </div>
+    <div class="footer"> 
+        <app-call-waiter-btn></app-call-waiter-btn>
+        <app-ok-btn></app-ok-btn>
+    </div>
 </div>

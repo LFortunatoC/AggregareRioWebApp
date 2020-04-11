@@ -12,7 +12,7 @@ export class BillBtnComponent implements OnInit {
   // bttBillText = " Bill ";
 
   billModal() {
-    this.router.navigateByUrl('modal');
+    this.router.navigateByUrl('bill');
     
   }
   constructor(private router: Router, private route: ActivatedRoute) { }

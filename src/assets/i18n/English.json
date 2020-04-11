@@ -12,6 +12,7 @@
     "bttStart": "Start",
     "bttCallWaiter": "Waiter",
     "bttOrder": "Order",
+    "bttOk":"Ok",
     "bttAddItem": "Add Item",
     "bttMakeOrder": "Place Order",
     "bttBill": "Bill",

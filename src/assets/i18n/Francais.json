@@ -1,6 +1,5 @@
 
 {
-    
     "text": "Menu Principal",
     "tCategory": "Catégorie",
     "tSubCategory": "Sous Catégorie",
@@ -14,6 +13,7 @@
     "bttStart": "Commencer",
     "bttCallWaiter": "Serveur",
     "bttOrder": "Commande",
+    "bttOk":"Oui",
     "bttAddItem": "Ajouter un item",
     "bttMakeOrder": "Commander",
     "bttBill": "Addition",

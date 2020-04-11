@@ -1,35 +1,34 @@
-<div class="header">
-    <app-navbar></app-navbar>
-    <div class="title">
-        <app-infobartitle #title [parentData] translate="tPreOrder"></app-infobartitle>
+<div class="app">
+    <div class="header">
+        <app-navbar></app-navbar>
+        <div class="title">
+            <app-infobartitle #title [parentData] translate="tPreOrder"></app-infobartitle>
+        </div>
     </div>
-</div>
-<div class="body">
-    <div class="index">
-        <div id="table">Table {{table}}</div>
+    <div class="body">
+        <div class="index">
+            <div id="table">Table {{table}}</div>
+        </div>
+            <ul id="hd" class="list-group">
+                <li class="list-group-item d-flex justify-content-start">
+                    <div style="width: 55%;" translate="iName"></div>
+                    <div style="width: 20%;" translate="iPrice"></div>
+                    <div style="width: 25%;" translate="iQty"></div>
+                </li>
+            </ul>
+            
+            <ul class="list-group" *ngFor = "let preOrder of preOrder.itemList; index as i">
+                <li class="list-group-item d-flex justify-content-start align-items-center"> 
+                    <div style="width: 55%;">{{preOrder.title}}</div>
+                    <div style="width: 20%;">${{preOrder.currPrice}}</div>               
+                    <div style="width: 25%;"><app-button-qt [quantity]="preOrder.qty" (newquantity)="updateQtty($event,i)"></app-button-qt></div>
+                </li>     
+            </ul>   
+
     </div>
-        <ul id="hd" class="list-group">
-            <li class="list-group-item d-flex justify-content-start">
-                <div style="width: 55%;" translate="iName"></div>
-                <div style="width: 20%;" translate="iPrice"></div>
-                <div style="width: 25%;" translate="iQty"></div>
-            </li>
-        </ul>
-        
-        <ul class="list-group" *ngFor = "let preOrder of preOrder.itemList; index as i">
-            <li class="list-group-item d-flex justify-content-start align-items-center"> 
-                <div style="width: 55%;">{{preOrder.title}}</div>
-                <div style="width: 20%;">${{preOrder.currPrice}}</div>               
-                <div style="width: 25%;"><app-button-qt [quantity]="preOrder.qty" (newquantity)="updateQtty($event,i)"></app-button-qt></div>
-            </li>     
-        </ul>   
 
-</div>
-
-<div class="footer"> 
-    <app-call-waiter-btn></app-call-waiter-btn>
-    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit" (click)="addToOrder()" translate="bttMakeOrder"></button>
-
-    <!-- <app-add-item-btn></app-add-item-btn> -->
-    <!-- this buttons are only placeholders that should be finished -->
+    <div class="footer"> 
+        <app-call-waiter-btn></app-call-waiter-btn>
+        <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit" (click)="addToOrder()" translate="bttMakeOrder"></button>
+    </div>
 </div>

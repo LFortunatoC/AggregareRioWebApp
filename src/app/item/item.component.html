@@ -1,26 +1,28 @@
-<div class="header">
-    <app-navbar></app-navbar>
-    <div class="title">
-        <app-infobartitle #title [parentData] translate="tItem"></app-infobartitle>
+<div class="app">
+    <div class="header">
+        <app-navbar></app-navbar>
+        <div class="title">
+            <app-infobartitle #title [parentData] translate="tItem"></app-infobartitle>
+        </div>
     </div>
-</div>
-<div class="body">
-    <!-- ngFor is used just as a Foreach code -->
-    <ul class="list-group" *ngFor = "let item of items; index as i" >
-        <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectItem(item)"> 
-            <div class="image-parent" style="width:25%;" >
-                <img class="img-fluid" src={{item.picturePath}}   alt={{item.title}}>
-            </div>
-            <div class="flex-column" style="width:45%;">
-                <p>{{item.title}}</p>
-            </div>
-            <div class="flex-column" style="width:10%;">
-                <p>{{item.value}}</p>
-            </div>
-        </li>
-    </ul>
-</div>
-<div class="footer">
-    <app-call-waiter-btn></app-call-waiter-btn>
-    <app-bill-btn></app-bill-btn>
-</div>
+    <div class="body">
+        <!-- ngFor is used just as a Foreach code -->
+        <ul class="list-group" *ngFor = "let item of items; index as i" >
+            <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectItem(item)"> 
+                <div class="image-parent" style="width:25%;" >
+                    <img class="img-fluid" src={{item.picturePath}}   alt={{item.title}}>
+                </div>
+                <div class="flex-column" style="width:45%;">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="flex-column" style="width:10%;">
+                    <p>{{item.value}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <app-call-waiter-btn></app-call-waiter-btn>
+        <app-bill-btn></app-bill-btn>
+    </div>
+<div>

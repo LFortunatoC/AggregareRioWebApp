@@ -44,6 +44,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient } from '@angular/common/http';
 import { ConfirmationDialogComponent } from './components/shared/confirmation-dialog/confirmation-dialog.component';
 import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.component';
+import { OkBtnComponent } from './tools/buttons/ok-btn/ok-btn.component';
+import { CallWaiterComponent } from './call-waiter/call-waiter.component';
 
 
 @NgModule({
@@ -74,7 +76,9 @@ import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.c
     ItemDescriptionComponent,
     LanguageComponent,
     ConfirmationDialogComponent,
-    AddItemBtnComponent
+    AddItemBtnComponent,
+    OkBtnComponent,
+    CallWaiterComponent
   ],
 
   imports: [
