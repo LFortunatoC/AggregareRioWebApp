@@ -15,12 +15,12 @@
     max-width: 40%;
     margin: 5% 5% 2.5% 0;
     float: left;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 h3 {
     text-align: center;
-    font-size: initial;
+    font-weight: bold;
 }
 
 .text {
@@ -28,7 +28,3 @@ h3 {
     margin-top: 2%;
     text-align: justify;
 }
-
-
-
-
