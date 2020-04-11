@@ -1,9 +1,14 @@
 .elements {
-    margin: 0 10% 0 10%;
+    margin: 5% 5% 5% 5%;
+    padding: 5%;
+    background-color: ivory;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;   
 }
 
 #logo {
     width: 100%;
+    margin: 5%;
 }
 
 #picture {
@@ -14,16 +19,14 @@
 }
 
 h3 {
-    font-weight: bold;
     text-align: center;
+    font-size: initial;
 }
 
 .text {
     vertical-align: middle;
     margin-top: 2%;
     text-align: justify;
-    font-size: 100%;
-    font-optical-sizing: 100%;
 }
 
 

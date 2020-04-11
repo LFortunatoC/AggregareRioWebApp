@@ -4,7 +4,9 @@
 .header {
     position: fixed;
     top: 0;
-    height: 12%;
+    height: 10%;
+    width: 100%;
+    max-width: 600px;
     background-color:#FFB35D;
     width: 100%;
 }
@@ -12,15 +14,19 @@
 .body {
     position: fixed;
     width: 100%;
-    top:12%;
-    height: 76%;
+    max-width: 600px;
+    top:10%;
+    height: 77%;
     background-color: #EEECE1;
-    overflow: scroll;
+    overflow-y: auto;
+    background-image: url("./assets/icon/bg.png");
+    background-size: 80%;
 }
 
 .footer {
     position: fixed;
     width: 100%;
+    max-width: 600px;
     top:88%;
     height: 100%;
     padding: 0.5%;
@@ -32,39 +38,65 @@
     height: 11%;
     background-color: #930000;
     color: #FFFFFF;
-    font-size: 16px;
 }
 
 #backBtt {
-    min-width: 20%;
+    min-width: 25%;
     color: #930000;
-    font-size: medium;
     float: left;
+    font-size: 20px;
 }
 
+
 #menuBtt {
-    min-width: 45%;
+    min-width: 50%;
     color: #930000;
     display: block;
-    font-size: medium;
     float: left;
+    font-size: 20px;
+
 }
 
 #langBtt {
-    min-width: 35%;
+    min-width: 25%;
     color: #930000;
     display: block;
-    font-size: medium;
+    font-size: 20px;
 }
+
 .title {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 12px;
     text-align: center;
     color:#930000;
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.popup {
+    margin: 5%;
+    vertical-align: middle;
+    padding: 10%;
+    background-color: ivory;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+html {
+    height: 100%; 
+}
+body {
+    margin:auto;
+    background-color: #000000; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+    max-width: 600px;
+    vertical-align: middle;
+    margin:auto;
+    font-size: 20px;
 }
 
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

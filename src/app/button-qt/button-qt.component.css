@@ -1,11 +1,12 @@
 .value-button {
     display: inline-block;
-    border: 1px solid #CECCC0;
-    width: 20px;
-    height: 30px;
-    text-align: center;
+    border: 2px solid #FFF;
+    width: 40px;
+    height: 40px;
+    margin:auto;
+    padding-top: 6px;
     vertical-align: middle;
-    padding-top: 5px;
+    text-align: center;
   }
 
   .value-button:hover {
@@ -13,7 +14,5 @@
   }
 
   .qtty-label {
-      margin: 5px;
-      
-  
+      margin: 1% 3%;
   }

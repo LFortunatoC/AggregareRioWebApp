@@ -55,7 +55,5 @@ export interface IPreOrderItem {
     currPrice: number
 }
 
-
-
 export type OrderedItems= [ItemOrdered];
 export type ItemList = [IItem];

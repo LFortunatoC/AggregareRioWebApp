@@ -1,15 +1,16 @@
-<div class="header">
-    <app-navbar></app-navbar>
-    <div class="title">
-        <app-infobartitle #title [parentData] translate="tItemDesc"></app-infobartitle>
-    </div>
-</div>
-<div class="bodyFirst">
-    <!-- Using the (click) event, we can load a specific item into the system and use its data to navigate -->
-        <div class="item-desc" (click)="selectItem(selectedItem)" > 
-            <img id="itemDescPicture" src={{selectedItem.picturePath}} alt={{selectedItem.title}}>
+<div class="app">
+    <div class="header">
+        <app-navbar></app-navbar>
+        <div class="title">
+            <app-infobartitle #title [parentData] translate="tItemDesc"></app-infobartitle>
         </div>
-        <div>
+    </div>
+    <div class="body">
+        <div id="bodyFirst">
+            <!-- Using the (click) event, we can load a specific item into the system and use its data to navigate -->
+            <img id="pictureItem" src={{selectedItem.picturePath}} alt={{selectedItem.title}} (click)="selectItem(selectedItem)">
+        </div>
+        <div id=bodyFirstItem>
             <ul id="hd" class="list-group">
                 <li class="list-group-item d-flex justify-content-start">
                     <div style="width: 80%;">{{selectedItem.title}}</div>
@@ -17,25 +18,26 @@
                 </li>
             </ul>
         </div>
-</div>
-<div class="bodySecond">
-    <p>{{selectedItem.description}}</p>
-</div>
-<form class="bodyThird">
-    <div class="form-group">
-        <label for="comments" translate="iComments"></label>
-        <textarea class="form-control" id="comments" name="comments" rows="2" maxlength="140"></textarea>
-    </div>
-</form>
-<div class="bodyFourth">
-        <div>
-            <app-button-qt [quantity]="item_qty" (newquantity)="updateQtty($event)"></app-button-qt><br>
+        <div id="bodySecond">
+            <p>{{selectedItem.description}}</p>
         </div>
-    </div>
-<div class="footer"> 
-    <!-- <app-add-item-btn></app-add-item-btn> -->
-    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit" (click)="addToOrder()" translate="bttAddItem"></button>
-      <!-- <app-order-btn></app-order-btn> -->
-    <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="go to preOrder" (click)="goToPre()" translate="bttOrder"></button>  
-</div>
+            <form class="bodyThird">
+                <div class="form-group">
+                    <label for="comments" translate="iComments"></label>
+                    <textarea class="form-control" id="comments" name="comments" rows="2" maxlength="140"></textarea>
+                </div>
+            </form>
+        <div id="bodyFourth">
+            <div id="item_qty">
+                <app-button-qt [quantity]="item_qty" (newquantity)="updateQtty($event)"></app-button-qt><br>
+            </div>
+        </div>
+    </div>        
+    <div class="footer"> 
+        <!-- <app-order-btn></app-order-btn> -->
+        <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="go to preOrder" (click)="goToPre()" translate="bttOrder"></button>  
+        <!-- <app-add-item-btn></app-add-item-btn> -->
+        <button class="buttonFooter" mat-raised-button color="warm" type="submit" value="Submit" (click)="addToOrder()" translate="bttAddItem"></button>
 
+    </div>
+</div>

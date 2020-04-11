@@ -7,9 +7,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule, RoutingComponents} from './app-routing.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 //import { FooterBttsComponent } from './tools/buttons/footer-btts/footer-btts.component';
-
 import { CommunicationService } from './communication/communication.service';
 import { RequestCacheService } from './communication/request-cache.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -45,8 +44,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient } from '@angular/common/http';
 import { ConfirmationDialogComponent } from './components/shared/confirmation-dialog/confirmation-dialog.component';
 import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.component';
-
-
+import { OkBtnComponent } from './tools/buttons/ok-btn/ok-btn.component';
+import { CallWaiterComponent } from './call-waiter/call-waiter.component';
 
 
 @NgModule({
@@ -78,6 +77,8 @@ import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.c
     LanguageComponent,
     ConfirmationDialogComponent,
     AddItemBtnComponent,
+    OkBtnComponent,
+    CallWaiterComponent
   ],
 
   imports: [
@@ -89,7 +90,6 @@ import { AddItemBtnComponent } from './tools/buttons/add-item-btn/add-item-btn.c
     MatIconModule,
     MatToolbarModule,
     MatListModule,
-    MatDialogModule,
     HttpClientModule,
     LazyLoadImageModule,
     HttpClientModule,

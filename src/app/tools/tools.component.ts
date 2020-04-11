@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolsComponent implements OnInit {
 
-  constructor() { }
+  public name='Welcome!';
 
+  sub : any;
+  cover: any;
+
+  
   ngOnInit(): void {
   }
 

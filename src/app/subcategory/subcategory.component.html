@@ -1,15 +1,17 @@
-<div class="header">
-    <app-navbar></app-navbar>
-    <div class="title">
-        <app-infobartitle #title [parentData] translate="tSubCategory"></app-infobartitle>
+<div class="app">
+    <div class="header">
+        <app-navbar></app-navbar>
+        <div class="title">
+            <app-infobartitle #title [parentData] translate="tSubCategory"></app-infobartitle>
+        </div>
     </div>
-</div>
-<div class="body">
-    <ul class="list-group" *ngFor = "let subcategory of subCategories; index as i" >
-        <li class="list-group-item" (click)="selectItem(subcategory.sub_category_id)">{{subcategory.description}}</li>
-    </ul>
-</div>
-<div class="footer"> 
-    <app-call-waiter-btn></app-call-waiter-btn>
-    <app-order-btn></app-order-btn>
+    <div class="body">
+        <ul class="list-group" *ngFor = "let subcategory of subCategories; index as i" >
+            <li class="list-group-item" (click)="selectItem(subcategory.sub_category_id)">{{subcategory.description}}</li>
+        </ul>
+    </div>
+    <div class="footer"> 
+        <app-call-waiter-btn></app-call-waiter-btn>
+        <app-order-btn></app-order-btn>
+    </div>
 </div>

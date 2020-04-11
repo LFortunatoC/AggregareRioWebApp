@@ -1,25 +1,25 @@
-<div class="header">
-    <app-navbar></app-navbar>
-    <div class="title">
-        <app-infobartitle #title [parentData] translate="tCategory"></app-infobartitle>
+<div class="app">
+    <div class="header">
+        <app-navbar></app-navbar>
+        <div class="title">
+            <app-infobartitle #title [parentData] translate="tCategory"></app-infobartitle>
+        </div>
+    </div>
+    <div class="body">
+        <ul class="list-group" *ngFor = "let category of categories; index as i" >
+            <li class="list-group-item d-flex align-items-center" (click)="selectItem(category.category_id)">
+                <div style="width: 50%;">
+                    <img class="img-fluid" src="./assets/icon/Image{{i}}.png"   alt={{category.title}}>
+                </div>
+                <div div style="width: 50%;">
+                    <p>{{category.description}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+        <!-- <li class="list-group-item"> <img [lazyLoad]= item.picturePath width=48px; alt={{item.title}}> {{item.title}} </li> -->
+    <div class="footer"> 
+        <app-call-waiter-btn></app-call-waiter-btn>
+        <app-order-btn></app-order-btn>
     </div>
 </div>
-<div class="body">
-    <ul class="list-group" *ngFor = "let category of categories; index as i" >
-        <li class="list-group-item d-flex justify-content-start align-items-center" (click)="selectItem(category.category_id)">
-            <div class="image-parent">
-                <img class="img-fluid" src="./assets/icon/Image{{i}}.png"   alt={{category.title}}>
-            </div>
-            <div class="flex-column">
-                <p>{{category.description}}</p>
-            </div>
-        </li>
-    </ul>
-</div>
-    <!-- <li class="list-group-item"> <img [lazyLoad]= item.picturePath width=48px; alt={{item.title}}> {{item.title}} </li> -->
-<div class="footer"> 
-    <app-call-waiter-btn></app-call-waiter-btn>
-    <app-order-btn></app-order-btn>
-
-</div>
-
