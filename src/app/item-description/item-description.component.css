@@ -29,7 +29,7 @@ h3 {
 
 #bodyFirstItem {
     position: fixed;
-    top: 51%;
+    top: 50%;
     width: 100%;
     max-width: 600px;
 }
@@ -37,13 +37,10 @@ h3 {
 #bodySecond {
     position: fixed;
     width: 98%;
-    max-width: 580px;
-    top:56%;
+    max-width: 600px;
+    top:55%;
     height: 10%;
-    vertical-align: middle;
-    margin: auto;
     padding:  5px 5%;
-    margin: 1%;
     background-color: #FFF;
     overflow-y: scroll;
 }
@@ -52,8 +49,8 @@ h3 {
     position: fixed;
     width: 100%;
     max-width: 600px;
-    padding: 5px 3%;
-    top:66%;
+    padding: 8px 2%;
+    top:65%;
     height: 17%;
     background-color: #FFF;
 }
@@ -70,8 +67,8 @@ h3 {
 
 #item_qty {
     vertical-align: middle;
-    margin: 2%;
-    font-size: 20px;
+    margin: 1%;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
