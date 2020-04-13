@@ -6,17 +6,15 @@
       </div>
   </div>
   <div class="body">
-
-    <h2>Table {{table}}</h2>
-    
-    <table class="history-table">
-      <tr><th><p translate="iName"></p></th> <th><p translate="iDelivered"></p></th></tr>
-      <tr class="list-group-history" *ngFor = "let historyitem of history.items; index as i">
-          <td>{{historyitem.title}}</td><td><app-checklist></app-checklist></td>
-      </tr>
-    </table>
-
-  </div>
+    <h2 id="tableNumber">Table {{table}}</h2>
+      <ul class="list-group" *ngFor = "let historyitem of history.items; index as i">
+        <li class="list-group-item d-flex justify-content-start align-items-center">
+          <div class="flex-column" style="width: 85%;">
+            {{historyitem.title}}</div>
+          <div><app-checklist></app-checklist></div>
+        </li>
+      </ul>
+    </div>
   <div class="footer"> 
     <app-call-waiter-btn></app-call-waiter-btn>
     <app-bill-btn></app-bill-btn>
