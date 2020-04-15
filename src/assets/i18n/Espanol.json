@@ -11,7 +11,7 @@
     "tHistory": "Histórico",
     "tLanguage": "Idioma",
     "bttStart": "Comenzar",
-    "bttCallWaiter": "Mesero",
+    "bttCallWaiter": "Mesero/Mesera",
     "bttOk":"Ok",
     "bttOrder": "Pedido",
     "bttAddItem": "Anãdir Ítem",
@@ -23,7 +23,14 @@
     "iQty": "Cantidad",
     "iTotal": "Total",
     "iDelivered": "Entregado",
-    "iComments": "Comentarios"
+    "iComments": "Comentarios",
+    "h2Bill": "Vamos a preparar tu cuenta.",
+    "h3Bill": "No tomará mucho tiempo.",
+    "pBill": "Gracias!",
+    "h2Waiter": "Si! Escuchamos su llamado.",
+    "h3Waiter": "El mesero/la mesera ya viene.",
+    "pWaiter": "Gracias!"
+
     
 
 }
