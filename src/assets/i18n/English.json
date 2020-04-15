@@ -22,7 +22,14 @@
     "iQty": "Qty",
     "iTotal": "Total",
     "iDelivered": "Delivered",
-    "iComments": "Comments"
+    "iComments": "Comments",
+    "h2Bill": "Your bill is going to be prepared.",
+    "h3Bill": "It won’t take too long.",
+    "pBill": "Thank you!",
+    "h2Waiter": "Yes! We heard your call.",
+    "h3Waiter": "The waiter is coming.",
+    "pWaiter": "Thank you!"
+
     
 
 }

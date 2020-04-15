@@ -23,7 +23,14 @@
     "iQty": "数量",
     "iTotal": "总",
     "iDelivered": "已交付",
-    "iComments": "評論"
+    "iComments": "評論",
+    "h2Bill": "您的账单正在生成中.",
+    "h3Bill": "不会耗费您太多时间.",
+    "pBill": "谢谢!",
+    "h2Waiter": "好的！我们收到了您的电话.",
+    "h3Waiter": "服务员将很快来为您服务.",
+    "pWaiter": "谢谢!"
+
     
 
 }

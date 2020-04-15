@@ -11,7 +11,7 @@
     "tHistory": "Historique",
     "tLanguage": "Langue",
     "bttStart": "Commencer",
-    "bttCallWaiter": "Serveur",
+    "bttCallWaiter": "Serveur/Serveuse",
     "bttOrder": "Commande",
     "bttOk":"Oui",
     "bttAddItem": "Ajouter un item",
@@ -23,7 +23,14 @@
     "iQty": "Qté",
     "iTotal": "Total",
     "iDelivered": "Livré",
-    "iComments": "Commentaires"
+    "iComments": "Commentaires",
+    "h2Bill": "Votre facture est en préparation.",
+    "h3Bill": "Cela ne prendra que quelques minutes.",
+    "pBill": "Merci!",
+    "h2Waiter": "Oui! Nous avons reçu votre commande.",
+    "h3Waiter": "Le serveur/la serveuse arrivera bientôt.",
+    "pWaiter": "Merci!"
+
    
 }
 

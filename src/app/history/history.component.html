@@ -6,7 +6,9 @@
       </div>
   </div>
   <div class="body">
-    <h2 id="tableNumber">Table {{table}}</h2>
+    <h2 id="tableNumber" translate="iTable">
+      <span>{{table}}</span>
+     </h2>
       <ul class="list-group" *ngFor = "let historyitem of history.items; index as i">
         <li class="list-group-item d-flex justify-content-start align-items-center">
           <div class="flex-column" style="width: 85%;">

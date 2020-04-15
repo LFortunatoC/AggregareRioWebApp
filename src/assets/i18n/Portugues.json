@@ -11,7 +11,7 @@
     "tHistory": "Histórico",
     "tLanguage": "Idioma",
     "bttStart": "Iniciar",
-    "bttCallWaiter": "Garçon",
+    "bttCallWaiter": "Garçon/Garçonete",
     "bttOk":"Ok",
     "bttOrder": "Ver Comanda",
     "bttAddItem": "Adicionar Item",
@@ -23,7 +23,14 @@
     "iQty": "Qtd",
     "iTotal": "Total",
     "iDelivered": "Entregue",
-    "iComments": "Comentários"
+    "iComments": "Comentários",
+    "h2Bill": "Sua conta está sendo preparada.",
+    "h3Bill": "Isso não levará muito tempo.",
+    "pBill": "Obrigado/a!",
+    "h2Waiter": "Sim! Nós recebemos sua solicitção.",
+    "h3Waiter": "O garçom/a garçonete está vindo.",
+    "pWaiter": "Obrigado/a!"
+
    
    
 }
